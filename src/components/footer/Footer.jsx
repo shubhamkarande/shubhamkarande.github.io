@@ -29,7 +29,7 @@ const Footer = () => {
         <a href="https://x.com/stfu_shubham09" className="footer__social-link" target="_blank"><i className="bx bxl-twitter"></i></a>
             </div>
 
-            <span className="footer__copy">&#169; Shubham Karande. All rights reserved.</span>
+            <span className="footer__copy">&#169; 2025 Shubham Karande. All rights reserved.</span>
         </div>
     </footer>
   )

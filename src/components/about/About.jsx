@@ -1,7 +1,7 @@
 import React from 'react';
 import "./about.css";
 import AboutImg from "../../assets/Shubham2.jpg";
-import CV from "../../assets/Shubham's_Resume.pdf";
+import CV from "../../assets/Shubham_Karande_Resume.pdf";
 import Info from './Info';
 
 const About = () => {
@@ -16,7 +16,7 @@ const About = () => {
                 <div className="about__data">
                     <Info />
 
-                    <p className="about__description">I specialize in crafting responsive, modern websites and high-performance mobile applications. With over 6 months of experience, I have collaborated with various tech startups and organizations to deliver innovative and reliable solutions tailored to their needs.</p>
+                    <p className="about__description">I specialize in crafting responsive, modern websites and high-performance mobile applications. With over 1 year of experience, I have collaborated with various tech startups and organizations to deliver innovative and reliable solutions tailored to their needs.</p>
 
                     <a download="" href={CV} className="button button--flex">Download Resume
                         <svg
