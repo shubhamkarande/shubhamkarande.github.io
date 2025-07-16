@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.e668288b.css",
-    "main.js": "/static/js/main.660c2daf.js",
+    "main.js": "/static/js/main.3d1d8b48.js",
     "static/media/Shubham2.jpg": "/static/media/Shubham2.b04452547ae8e18d0568.jpg",
+    "static/media/sanil.png": "/static/media/sanil.f7548018f952215bce6c.png",
+    "static/media/pratham.jpg": "/static/media/pratham.289bab1119a7751d2d7c.jpg",
+    "static/media/bedant.jpg": "/static/media/bedant.9c2969324e3921a842c3.jpg",
     "static/media/Shubham.jpg": "/static/media/Shubham.a6b968f729e21eef0cf2.jpg",
-    "static/media/Shubham's_Resume.pdf": "/static/media/Shubham's_Resume.7f5f0bbd729afa368afd.pdf",
-    "static/media/testimonial3.png": "/static/media/testimonial3.2e18bfe27c6d2e2e9fdc.png",
+    "static/media/chinmay.jpeg": "/static/media/chinmay.fa62e1925ce982fb5b6b.jpeg",
+    "static/media/Shubham_Karande_Resume.pdf": "/static/media/Shubham_Karande_Resume.0872e20483b3240a2690.pdf",
+    "static/media/swapnil.jpeg": "/static/media/swapnil.a772254119415bb75cf3.jpeg",
     "static/media/work2.jpg": "/static/media/work2.e52a0c2981a6c11ba468.jpg",
-    "static/media/testimonial2.png": "/static/media/testimonial2.39a53f7f092f07f5bceb.png",
     "static/media/work4.jpg": "/static/media/work4.aee985961b648f4df1f2.jpg",
     "static/media/work5.jpg": "/static/media/work5.094ec4a2224db8908873.jpg",
     "static/media/work1.jpg": "/static/media/work1.321b4ae3bf404acdfdc6.jpg",
     "static/media/work3.jpg": "/static/media/work3.135e9065694bc13dc31d.jpg",
-    "static/media/testimonial1.png": "/static/media/testimonial1.89079c1d25f2c94ceb89.png",
     "index.html": "/index.html",
     "main.e668288b.css.map": "/static/css/main.e668288b.css.map",
-    "main.660c2daf.js.map": "/static/js/main.660c2daf.js.map"
+    "main.3d1d8b48.js.map": "/static/js/main.3d1d8b48.js.map"
   },
   "entrypoints": [
     "static/css/main.e668288b.css",
-    "static/js/main.660c2daf.js"
+    "static/js/main.3d1d8b48.js"
   ]
 }
