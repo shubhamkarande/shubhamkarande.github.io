@@ -28,46 +28,12 @@ const Qualification = () => {
                 <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"}>
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Diploma in Computer Engineering</h3>
-                            <span className="qualification__subtitle">MSBTE</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2019 - 2022
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <div className="qualification__line"></div>
-                        </div>
-                    </div>
-
-                    <div className="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-
-                        <div>
                             <h3 className="qualification__title">B.E. in Computer Engineering</h3>
                             <span className="qualification__subtitle">University of Mumbai</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i> 2022 - 2025
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Co-Lead Developer</h3>
-                            <span className="qualification__subtitle">Hyperstellar Technology</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> August 2021 - September 2021
-                            </div>
-                        </div>
 
                         <div>
                             <span className="qualification__rounder"></span>
@@ -84,14 +50,84 @@ const Qualification = () => {
                         </div>
 
                         <div>
-                            <h3 className="qualification__title">Software Developer</h3>
-                            <span className="qualification__subtitle">Prodigy InfoTech</span>
+                            <h3 className="qualification__title">Diploma in Computer Engineering</h3>
+                            <span className="qualification__subtitle">MSBTE</span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> July 2024 - September 2024
+                                <i className="uil uil-calendar-alt"></i> 2019 - 2022
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
+  {/* Experience 1 */}
+  <div className="qualification__data">
+    <div>
+      <h3 className="qualification__title">Full Stack Developer</h3>
+      <span className="qualification__subtitle">Mindrift</span>
+      <div className="qualification__calendar">
+        <i className="uil uil-calendar-alt"></i> June 2025 - Present
+      </div>
+    </div>
+
+    <div>
+      <span className="qualification__rounder"></span>
+      <div className="qualification__line"></div>
+    </div>
+  </div>
+
+  {/* Experience 2 */}
+  <div className="qualification__data">
+    <div></div>
+
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+
+    <div>
+      <h3 className="qualification__title">Software Developer</h3>
+      <span className="qualification__subtitle">Outlier</span>
+      <div className="qualification__calendar">
+        <i className="uil uil-calendar-alt"></i> October 2024 - April 2025
+      </div>
+    </div>
+  </div>
+
+  {/* Experience 3 - NEW */}
+  <div className="qualification__data">
+    <div>
+      <h3 className="qualification__title">Freelance</h3>
+      <span className="qualification__subtitle">Prodigy InfoTech</span>
+      <div className="qualification__calendar">
+        <i className="uil uil-calendar-alt"></i> July 2024 - September 2024
+      </div>
+    </div>
+
+    <div>
+      <span className="qualification__rounder"></span>
+      <div className="qualification__line"></div>
+    </div>
+  </div>
+
+  {/* Experience 4 - NEW */}
+  <div className="qualification__data">
+    <div></div>
+
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+
+    <div>
+      <h3 className="qualification__title">Co-Lead Developer</h3>
+      <span className="qualification__subtitle">HyperStellar Technology</span>
+      <div className="qualification__calendar">
+        <i className="uil uil-calendar-alt"></i> August 2021 - September 2021
+      </div>
+    </div>
+  </div>
+</div>
             </div>
         </div>
     </section>

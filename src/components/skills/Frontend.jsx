@@ -1,32 +1,32 @@
 import React from "react";
 
 const skillsData = [
-  { name: "C", level: "Intermediate" },
-  { name: "C++", level: "Intermediate" },
-  { name: "C#", level: "Basic" },
-  { name: "HTML", level: "Advanced" },
-  { name: "CSS", level: "Advanced" },
+  { name: "HTML & CSS", level: "Advanced" },
   { name: "JavaScript", level: "Advanced" },
   { name: "TypeScript", level: "Advanced" },
   { name: "Java", level: "Advanced" },
   { name: "Kotlin", level: "Advanced" },
   { name: "Python", level: "Advanced" },
   { name: "Dart", level: "Advanced" },
+  { name: "PHP", level: "Advanced" },
+  { name: "MySQL", level: "Advanced" },
+  { name: "PostgreSQL", level: "Advanced" },
+  { name: "SQLite", level: "Advanced" },
+  { name: "MongoDB", level: "Advanced" },
+  { name: "Firebase", level: "Advanced" },
+  { name: "Redis", level: "Intermediate" },
+  { name: "C", level: "Intermediate" },
+  { name: "C++", level: "Intermediate" },
+  { name: "C#", level: "Intermediate" },
   { name: "Rust", level: "Basic" },
   { name: "Golang", level: "Basic" },
-  { name: "Tailwind CSS", level: "Advanced" },
-  { name: "React", level: "Advanced" },
-  { name: "Angular", level: "Intermediate" },
-  { name: "Vue.js", level: "Basic" },
-  { name: "Next.js", level: "Advanced" },
-  { name: "React Native", level: "Advanced" },
-  { name: "Flutter", level: "Intermediate" },
+  { name: "Ruby", level: "Basic" },
 ];
 
 const Frontend = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Frontend Developer</h3>
+      <h3 className="skills__title">Languagues & Databases</h3>
 
       <div className="skills__box">
         {/* Split skillsData into two groups */}

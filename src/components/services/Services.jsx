@@ -28,7 +28,7 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                         <h3 className="services__modal-title">Web Developer</h3>
-                        <p className="services__modal-description">More than 6 months of experience in creating responsive, modern, and SEO-optimized websites. Delivering quality work for clients and companies.</p>
+                        <p className="services__modal-description">More than 1 year of experience in creating responsive, modern, and SEO-optimized websites. Delivering quality work for clients and companies.</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
@@ -73,7 +73,7 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                         <h3 className="services__modal-title">App Developer</h3>
-                        <p className="services__modal-description">More than 6 months of experience in developing user-friendly, high-performance mobile applications for both Android and iOS platforms.</p>
+                        <p className="services__modal-description">More than 1 year of experience in developing user-friendly, high-performance mobile applications for both Android and iOS platforms.</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
@@ -118,7 +118,7 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                         <h3 className="services__modal-title">Full-Stack Developer</h3>
-                        <p className="services__modal-description">More than 6 months of experience in delivering end-to-end development solutions, from frontend to backend, for scalable and robust applications.</p>
+                        <p className="services__modal-description">More than 1 year of experience in delivering end-to-end development solutions, from frontend to backend, for scalable and robust applications.</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">

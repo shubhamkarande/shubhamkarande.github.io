@@ -1,32 +1,32 @@
 import React from "react";
 
 const backendSkillsData = [
-  { name: "PHP", level: "Advanced" },
-  { name: "Ruby", level: "Intermediate" },
+  { name: "React", level: "Advanced" },
+  { name: "Svelte", level: "Advanced" },
+  { name: "Angular", level: "Advanced" },
+  { name: "AngularJS", level: "Advanced" },
+  { name: "Vue.js", level: "Advanced" },
+  { name: "Next.js", level: "Advanced" },
+  { name: "React Native", level: "Advanced" },
+  { name: "Flutter", level: "Advanced" },
   { name: "Node.js", level: "Advanced" },
-  { name: "Express.js", level: "Advanced" },
+  { name: "Express", level: "Advanced" },
   { name: "Django", level: "Advanced" },
-  { name: "Flask", level: "Intermediate" },
-  { name: "Ruby on Rails", level: "Intermediate" },
+  { name: "Flask", level: "Advanced" },
+  { name: "ASP.NET", level: "Intermediate" },
+  { name: "ASP.NET Core", level: "Intermediate" },
+  { name: "Spring", level: "Intermediate" },
   { name: "Spring Boot", level: "Intermediate" },
   { name: "Laravel", level: "Intermediate" },
-  { name: "ASP.NET Core", level: "Basic" },
-  { name: "MySQL", level: "Advanced" },
-  { name: "PostgreSQL", level: "Intermediate" },
-  { name: "SQLite", level: "Intermediate" },
-  { name: "MongoDB", level: "Advanced" },
-  { name: "Firebase", level: "Advanced" },
-  { name: "Redis", level: "Intermediate" },
-  { name: "AWS", level: "Advanced" },
-  { name: "GCP", level: "Intermediate" },
-  { name: "Microsoft Azure", level: "Intermediate" },
-  { name: "ASP.NET", level: "Basic" },
+  { name: "Ruby on Rails", level: "Intermediate" },
+  { name: "Gin", level: "Basic" },
+  { name: "Rocket", level: "Basic" },
 ];
 
 const Backend = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Backend Developer</h3>
+      <h3 className="skills__title">Frameworks & Libraries</h3>
 
       <div className="skills__box">
         {/* First Group */}

@@ -1,32 +1,32 @@
 import React from "react";
 
 const toolsData = [
-  { name: "GitHub", level: "Advanced" },
   { name: "Git", level: "Advanced" },
-  { name: "Docker", level: "Intermediate" },
-  { name: "Kubernetes", level: "Basic" },
-  { name: "Jenkins", level: "Basic" },
-  { name: "GitLab", level: "Advanced" },
+  { name: "AWS", level: "Advanced" },
+  { name: "Microsoft Azure", level: "Advanced" },
+  { name: "GCP", level: "Advanced" },
   { name: "Postman", level: "Advanced" },
+  { name: "RESTful API", level: "Advanced" },
+  { name: "GraphQL", level: "Advanced" },
+  { name: "Vite", level: "Advanced" },
+  { name: "GSAP", level: "Advanced" },
+  { name: "Framer Motion", level: "Advanced" },
+  { name: "Babel", level: "Advanced" },
+  { name: "Redux", level: "Advanced" },
+  { name: "JWT", level: "Advanced" },
   { name: "Figma", level: "Advanced" },
   { name: "Adobe XD", level: "Advanced" },
-  { name: "Heroku", level: "Advanced" },
-  { name: "REST API", level: "Advanced" },
-  { name: "Vite", level: "Intermediate" },
-  { name: "Redux", level: "Intermediate" },
-  { name: "Babel", level: "Basic" },
-  { name: "Netlify", level: "Advanced" },
-  { name: "Vercel", level: "Advanced" },
-  { name: "TravisCI", level: "Basic" },
-  { name: "Nginx", level: "Basic" },
-  { name: "CircleCI", level: "Basic" },
-  { name: "Bitbucket", level: "Intermediate" },
+  { name: "Docker", level: "Intermediate" },
+  { name: "Kubernetes", level: "Intermediate" },
+  { name: "Jest", level: "Intermediate" },
+  { name: "shadcn/ui", level: "Basic" },
+  { name: "Cypress", level: "Basic" },
 ];
 
 const Tools = () => {
   return (
     <div className="tools__content">
-      <h3 className="tools__title">Tools & Libraries</h3>
+      <h3 className="tools__title">Cloud, Tools & Others</h3>
 
       <div className="tools__box">
         {/* Split toolsData into two groups */}
