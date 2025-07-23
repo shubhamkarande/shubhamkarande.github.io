@@ -175,7 +175,7 @@ export const projectsData = [
     image: Work5,
     title: 'StudyBuddy – Focus. Plan. Succeed.',
     category: 'App',
-    description: 'StudyBuddy – Focus. Plan. Succeed. is a smart AI-powered study planner app built with React Native (Expo), styled using Tailwind-RN, and managed with Redux Toolkit for seamless state handling. The backend, developed with Node.js (using Fastify or Express) and deployed via Google Cloud Functions, delivers high performance and scalability. Firebase Firestore handles real-time data storage, enabling features like AI-generated personalized study plans, focus mode for distraction-free sessions, and streak tracking to boost consistency and motivation—empowering students to stay organized and achieve academic success.',
+    description: 'StudyBuddy is an AI-powered study planner app built with React Native (Expo), Tailwind-RN, and Redux Toolkit. Backend uses Node.js (Fastify/Express) via Google Cloud Functions. Firebase Firestore powers real-time AI study plans, focus mode, and streak tracking—helping students stay organized and succeed.',
     demoLink: 'https://web-design-showcase.com'
   },
   {
