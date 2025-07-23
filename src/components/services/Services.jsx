@@ -28,32 +28,32 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                         <h3 className="services__modal-title">Web Developer</h3>
-                        <p className="services__modal-description">More than 1 year of experience in creating responsive, modern, and SEO-optimized websites. Delivering quality work for clients and companies.</p>
+                        <p className="services__modal-description">With over 1 year of hands-on experience crafting responsive, high-performance, and SEO-optimized websites. I specialize in building modern UIs, enhancing web performance, and delivering seamless user experiences for clients and businesses.</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can create responsive websites.</p>
+                                <p className="services__modal-info">I build fully responsive, cross-browser compatible websites.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can design attractive UI/UX layouts.</p>
+                                <p className="services__modal-info">I design intuitive and visually engaging UI/UX layouts.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can implement SEO strategies.</p>
+                                <p className="services__modal-info">I apply effective SEO strategies to boost visibility.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can optimize website performance.</p>
+                                <p className="services__modal-info">I enhance website speed, accessibility, and performance.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can integrate RESTful APIs.</p>
+                                <p className="services__modal-info">I integrate and consume RESTful APIs with clean, scalable code.</p>
                             </li>
                         </ul>
                     </div>
@@ -73,32 +73,32 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                         <h3 className="services__modal-title">App Developer</h3>
-                        <p className="services__modal-description">More than 1 year of experience in developing user-friendly, high-performance mobile applications for both Android and iOS platforms.</p>
+                        <p className="services__modal-description">Over 1 year of experience building intuitive, high-performance mobile applications for both Android and iOS using cross-platform technologies. I focus on delivering seamless user experiences, strong security, and scalable app solutions.</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can create cross-platform mobile apps.</p>
+                                <p className="services__modal-info">I develop cross-platform mobile apps with native-like performance.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can design interactive app interfaces.</p>
+                                <p className="services__modal-info">I design engaging and responsive user interfaces.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can integrate payment gateways.</p>
+                                <p className="services__modal-info">I integrate secure and reliable payment gateways.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can deploy apps to App Store/Play Store.</p>
+                                <p className="services__modal-info">I handle full deployment to the App Store and Play Store.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can ensure app security and performance.</p>
+                                <p className="services__modal-info">I ensure top-tier app security, stability, and performance.</p>
                             </li>
                         </ul>
                     </div>
@@ -118,32 +118,32 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                         <h3 className="services__modal-title">Full-Stack Developer</h3>
-                        <p className="services__modal-description">More than 1 year of experience in delivering end-to-end development solutions, from frontend to backend, for scalable and robust applications.</p>
+                        <p className="services__modal-description">With over 1 year of experience delivering complete end-to-end solutions—from elegant frontends to powerful backends—for scalable and robust applications. I build secure, performant systems ready for production and growth.</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can develop scalable web applications.</p>
+                                <p className="services__modal-info">I develop scalable, full-featured web applications.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can manage both frontend and backend.</p>
+                                <p className="services__modal-info">I handle both frontend and backend with seamless integration.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can work with relational and NoSQL databases.</p>
+                                <p className="services__modal-info">I work with relational (SQL) and NoSQL databases efficiently.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can deploy cloud-based solutions.</p>
+                                <p className="services__modal-info">I deploy and manage cloud-based infrastructures.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I can build real-time applications.</p>
+                                <p className="services__modal-info">I build real-time applications using modern web technologies.</p>
                             </li>
                         </ul>
                     </div>
