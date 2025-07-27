@@ -8,6 +8,8 @@ import Work7 from "../../assets/roofly.png";
 import Work8 from "../../assets/bitpad.png";
 import Work9 from "../../assets/healio.png";
 import Work10 from "../../assets/nomadhire.png";
+import Work11 from "../../assets/meetnexa.png";
+import Work12 from "../../assets/staysphere.png";
 
 export const projectsData = [
   {
@@ -92,7 +94,7 @@ export const projectsData = [
   },
   {
     id: 11,
-    image: Work10,
+    image: Work11,
     title: 'MeetNexa – Connect Visually, Anywhere',
     category: 'Web',
     description: 'MeetNexa – Connect Visually, Anywhere is a Google Meet clone with real-time video calls, chat, and screen sharing. Built with Next.js, Tailwind, and Zustand. Uses WebRTC and Socket.io for peer-to-peer connections. Backend runs on Node.js. Firebase stores meeting metadata, user auth, and messages.',
@@ -100,7 +102,7 @@ export const projectsData = [
   },
   {
     id: 12,
-    image: Work10,
+    image: Work12,
     title: 'StaySphere – Book Unique Stays Around the Globe',
     category: 'Web',
     description: 'StaySphere – Book Unique Stays Around the Globe is an Airbnb-style platform built with Astro and Tailwind CSS. Backend uses Laravel REST API on GCP App Engine with PostgreSQL. Features include listings, search with filters, Stripe payments, messaging, reviews, and image uploads via Cloudinary.',
