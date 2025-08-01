@@ -86,7 +86,7 @@ const Qualification = () => {
     </div>
 
     <div>
-      <h3 className="qualification__title">Software Developer</h3>
+      <h3 className="qualification__title">Freelance Software Engineer</h3>
       <span className="qualification__subtitle">Outlier</span>
       <div className="qualification__calendar">
         <i className="uil uil-calendar-alt"></i> October 2024 - April 2025
@@ -97,7 +97,7 @@ const Qualification = () => {
   {/* Experience 3 - NEW */}
   <div className="qualification__data">
     <div>
-      <h3 className="qualification__title">Freelance</h3>
+      <h3 className="qualification__title">Software Engineer Intern</h3>
       <span className="qualification__subtitle">Prodigy InfoTech</span>
       <div className="qualification__calendar">
         <i className="uil uil-calendar-alt"></i> July 2024 - September 2024
@@ -120,10 +120,10 @@ const Qualification = () => {
     </div>
 
     <div>
-      <h3 className="qualification__title">Co-Lead Developer</h3>
-      <span className="qualification__subtitle">HyperStellar Technology</span>
+      <h3 className="qualification__title">Freelance Software Developer</h3>
+      <span className="qualification__subtitle">Remotasks</span>
       <div className="qualification__calendar">
-        <i className="uil uil-calendar-alt"></i> August 2021 - September 2021
+        <i className="uil uil-calendar-alt"></i> January 2023 - December 2023
       </div>
     </div>
   </div>
