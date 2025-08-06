@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useDarkMode } from '../../context/DarkModeContext';
 import "./header.css";
 
 const Header = () => {
@@ -9,6 +10,7 @@ const Header = () => {
     });
     const[Toggle, showMenu] = useState(false);
     const [activeNav, setActiveNav] = useState("#home");
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
   return (
     <header className="header">
         <nav className="nav container">
@@ -56,8 +58,14 @@ const Header = () => {
             <i className="uil uil-times nav__close" onClick={() => showMenu(!Toggle)}></i>
             </div>
 
-            <div className="nav_toggle" onClick={() => showMenu(!Toggle)}>
-                <i className="uil uil-apps"></i>
+            <div className="nav__controls">
+                <div className="nav__theme" onClick={toggleDarkMode}>
+                    <i className={isDarkMode ? "uil uil-sun" : "uil uil-moon"}></i>
+                </div>
+                
+                <div className="nav_toggle" onClick={() => showMenu(!Toggle)}>
+                    <i className="uil uil-apps"></i>
+                </div>
             </div>
         </nav>
     </header>

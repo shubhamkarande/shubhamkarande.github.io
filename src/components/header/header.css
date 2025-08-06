@@ -42,6 +42,23 @@
     display: none;
 }
 
+.nav__controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav__theme:hover {
+    color: var(--title-color-dark);
+}
+
 .active-link,
 .nav__link:hover {
     color: var(--title-color-dark);
@@ -109,6 +126,14 @@
     .nav__close,
     .nav__toggle {
         display: block;
+    }
+
+    .nav__controls {
+        gap: 0.75rem;
+    }
+
+    .nav__theme {
+        font-size: 1.1rem;
     }
 }
 

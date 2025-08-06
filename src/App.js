@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { DarkModeProvider } from "./context/DarkModeContext";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
@@ -14,23 +15,23 @@ import ScrollUp from "./components/scrollup/ScrollUp";
 
 const App = () => {
   return (
-    <>
-    <Header />
+    <DarkModeProvider>
+      <Header />
 
-    <main className='main'>
-      <Home />
-      <About />
-      <Skills />
-      <Services />
-      <Qualification />
-      <Work />
-      <Testimonials />
-      <Contact />
-    </main>
+      <main className='main'>
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Qualification />
+        <Work />
+        <Testimonials />
+        <Contact />
+      </main>
 
-    <Footer />
-    <ScrollUp />
-    </>
+      <Footer />
+      <ScrollUp />
+    </DarkModeProvider>
   )
 }
 

@@ -50,6 +50,15 @@
     --z-modal: 1000;
 }
 
+/*=============== DARK THEME ===============*/
+body.dark-theme {
+    --title-color: hsl(var(--hue), var(--sat), 95%);
+    --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+    --text-color: hsl(var(--hue), var(--sat), 75%);
+    --body-color: hsl(var(--hue), var(--sat), 12%);
+    --container-color: hsl(var(--hue), var(--sat), 16%);
+}
+
 /* Responsive typography */
 @media screen and (max-width: 992px) {
     :root {
