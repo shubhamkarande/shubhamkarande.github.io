@@ -405,8 +405,8 @@ const ContactSection = () => {
                     </div>
                   ) : (
                     <div className="flex items-center gap-2">
-                      <PaperPlaneTilt size={20} />
                       Let's Go!
+                      <PaperPlaneTilt size={20} />
                     </div>
                   )}
                 </Button>
