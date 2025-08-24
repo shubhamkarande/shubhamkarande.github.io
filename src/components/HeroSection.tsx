@@ -14,18 +14,20 @@ const HeroSection = () => {
   const [currentGreeting, setCurrentGreeting] = useState(0);
 
   const greetings = [
-    'Hi',
-    'Hola',
+    'Hello',
     'नमस्ते',
+    '你好',
+    'Hola',
+    'مرحبا',
     'Bonjour',
-    'Hallo',
-    'Привет',
-    'Olá',
     'নমস্কার',
+    'Olá',
+    'Привет',
+    'ہیلو',
+    'Hallo',
+    'Ciao',
     '안녕하세요',
     'こんにちは',
-    'مرحبا',
-    '你好'
   ];
 
   useEffect(() => {

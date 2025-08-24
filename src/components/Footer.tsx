@@ -8,7 +8,7 @@ import {
   InstagramLogo,
   SnapchatLogo
 } from 'phosphor-react';
-import { SiLeetcode, SiX } from 'react-icons/si';
+import { SiLeetcode, SiX, SiDribbble, SiMedium } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -119,7 +119,7 @@ const Footer = () => {
             </h4>
             
 
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-4 gap-3">
               <a 
                 href="https://linkedin.com/in/karandeshubham" 
                 target="_blank"
@@ -207,6 +207,36 @@ const Footer = () => {
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-yellow-300 transition-colors duration-300">
                   Snapchat
+                </span>
+              </a>
+              
+              <a 
+                href="https://dribbble.com/shubhamkarande" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
+              >
+                <SiDribbble 
+                  size={16} 
+                  className="text-foreground group-hover:text-pink-400 transition-colors duration-300" 
+                />
+                <span className="text-[8px] text-foreground/70 group-hover:text-pink-400 transition-colors duration-300">
+                  Dribbble
+                </span>
+              </a>
+              
+              <a 
+                href="https://medium.com/@shubhamkarande94" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
+              >
+                <SiMedium 
+                  size={16} 
+                  className="text-foreground group-hover:text-green-400 transition-colors duration-300" 
+                />
+                <span className="text-[8px] text-foreground/70 group-hover:text-green-400 transition-colors duration-300">
+                  Medium
                 </span>
               </a>
             </div>
