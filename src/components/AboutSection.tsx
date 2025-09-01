@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MapPin, Briefcase, Headphones, Download, FilePdf } from 'phosphor-react';
 import resumePDF from '@/assets/Shubham-Karande-Resume.pdf';
-import profileImage from '@/assets/Shubham2.jpg';
+import profileImage from '@/assets/Shubham.jpg';
 import { Button } from '@/components/ui/button';
 
 gsap.registerPlugin(ScrollTrigger);
