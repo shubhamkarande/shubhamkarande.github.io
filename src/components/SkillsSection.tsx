@@ -91,7 +91,50 @@ import {
   SiTauri,
   SiCanva,
   SiGithub,
-  SiWordpress
+  SiWordpress,
+  SiGitlab,
+  SiMariadb,
+  SiOracle,
+  SiApachekafka,
+  SiRabbitmq,
+  SiElasticsearch,
+  SiApachesolr,
+  SiApachecouchdb,
+  SiAmazondynamodb,
+  SiApachecassandra,
+  SiApachehadoop,
+  SiApachespark,
+  SiNeo4J,
+  SiAmazonec2,
+  SiAwslambda,
+  SiAmazonecs,
+  SiAmazons3,
+  SiAmazonrds,
+  SiAmazonredshift,
+  SiBitbucket,
+  SiJenkins,
+  SiApachetomcat,
+  SiCloudflare,
+  SiCircleci,
+  SiPrometheus,
+  SiGrafana,
+  SiNumpy,
+  SiPandas,
+  SiScikitlearn,
+  SiPytorch,
+  SiTensorflow,
+  SiKeras,
+  SiScala,
+  SiJira,
+  SiSlack,
+  SiTrello,
+  SiSketch,
+  SiSolana,
+  SiEthereum,
+  SiPolygon,
+  SiOpenzeppelin,
+  SiDatadog,
+  SiOpencv
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -221,7 +264,118 @@ const SkillsSection = () => {
     { icon: FaGoogle, name: 'GOOGLE CLOUD', color: 'text-blue-400' },
     { icon: SiKubernetes, name: 'KUBERNETES', color: 'text-blue-500' },
     { icon: FaMicrosoft, name: 'MICROSOFT AZURE', color: 'text-blue-500' },
-    { icon: SiWordpress, name: 'WORDPRESS', color: 'text-blue-600' }
+    { icon: SiWordpress, name: 'WORDPRESS', color: 'text-blue-600' },
+    
+    // Version Control & DevOps
+    { icon: SiGitlab, name: 'GITLAB', color: 'text-orange-500' },
+    { icon: SiBitbucket, name: 'BITBUCKET', color: 'text-blue-600' },
+    { icon: SiJenkins, name: 'JENKINS', color: 'text-blue-500' },
+    { icon: FaCode, name: 'GITLAB CI', color: 'text-orange-400' },
+    { icon: SiCircleci, name: 'CIRCLE CI', color: 'text-green-500' },
+    
+    // Databases
+    { icon: SiMariadb, name: 'MARIADB', color: 'text-blue-800' },
+    { icon: FaCode, name: 'MICROSOFT SQL', color: 'text-red-600' },
+    { icon: SiOracle, name: 'ORACLE DATABASE', color: 'text-red-500' },
+    { icon: FaCode, name: 'MEMCACHED', color: 'text-green-400' },
+    { icon: SiApachecouchdb, name: 'APACHE COUCHDB', color: 'text-red-500' },
+    { icon: SiAmazondynamodb, name: 'AMAZON DYNAMODB', color: 'text-orange-500' },
+    { icon: FaCode, name: 'RETHINKDB', color: 'text-blue-400' },
+    { icon: SiApachecassandra, name: 'APACHE CASSANDRA', color: 'text-cyan-400' },
+    { icon: SiNeo4J, name: 'NEO4J', color: 'text-blue-500' },
+    { icon: FaCode, name: 'AMAZON NEPTUNE', color: 'text-blue-400' },
+    { icon: FaCode, name: 'TIMESCALEDB', color: 'text-orange-500' },
+    { icon: FaCode, name: 'COSMOS DB', color: 'text-purple-500' },
+    
+    // Message Queues & Streaming
+    { icon: SiApachekafka, name: 'APACHE KAFKA', color: 'text-gray-700' },
+    { icon: SiRabbitmq, name: 'RABBITMQ', color: 'text-orange-600' },
+    
+    // Search & Analytics
+    { icon: SiElasticsearch, name: 'ELASTICSEARCH', color: 'text-yellow-500' },
+    { icon: SiApachesolr, name: 'APACHE SOLR', color: 'text-red-600' },
+    
+    // Big Data & Processing
+    { icon: SiApachehadoop, name: 'APACHE HADOOP', color: 'text-yellow-600' },
+    { icon: SiApachespark, name: 'APACHE SPARK', color: 'text-orange-500' },
+    { icon: FaCode, name: 'APACHE HBASE', color: 'text-blue-600' },
+    
+    // AWS Services
+    { icon: SiAmazonec2, name: 'AMAZON EC2', color: 'text-orange-400' },
+    { icon: SiAwslambda, name: 'AMAZON LAMBDA', color: 'text-orange-500' },
+    { icon: SiAmazonecs, name: 'AMAZON ECS', color: 'text-orange-400' },
+    { icon: SiAmazons3, name: 'AMAZON S3', color: 'text-orange-500' },
+    { icon: SiAmazonrds, name: 'AMAZON RDS', color: 'text-blue-600' },
+    { icon: FaCode, name: 'AMAZON ELASTICACHE', color: 'text-red-500' },
+    { icon: FaCode, name: 'AMAZON SAGEMAKER', color: 'text-green-500' },
+    { icon: SiAmazonredshift, name: 'AMAZON REDSHIFT', color: 'text-red-600' },
+    { icon: FaCode, name: 'AMAZON CLOUDFRONT', color: 'text-orange-400' },
+    
+    // APIs & Protocols
+    { icon: FaCode, name: 'GRPC', color: 'text-blue-500' },
+    { icon: FaCode, name: 'SOAP API', color: 'text-green-500' },
+    { icon: SiJsonwebtokens, name: 'REST API', color: 'text-green-400' },
+    { icon: FaCode, name: 'WEBSOCKETS', color: 'text-blue-400' },
+    
+    // Containers & Infrastructure
+    { icon: FaCode, name: 'LINUX CONTAINERS', color: 'text-yellow-500' },
+    { icon: SiApachetomcat, name: 'APACHE TOMCAT', color: 'text-yellow-600' },
+    { icon: SiCloudflare, name: 'CLOUDFLARE', color: 'text-orange-500' },
+    
+    // Shell & Scripting
+    { icon: FaCode, name: 'BASH', color: 'text-gray-400' },
+    { icon: FaCode, name: 'POWERSHELL', color: 'text-blue-500' },
+    
+    // Monitoring & Observability
+    { icon: SiPrometheus, name: 'PROMETHEUS', color: 'text-orange-500' },
+    { icon: SiGrafana, name: 'GRAFANA', color: 'text-orange-600' },
+    { icon: SiDatadog, name: 'DATADOG', color: 'text-purple-600' },
+    
+    // AI & Machine Learning
+    { icon: FaCode, name: 'LANGCHAIN', color: 'text-green-400' },
+    { icon: FaCode, name: 'MCP SERVERS', color: 'text-blue-500' },
+    { icon: FaCode, name: 'LLAMAINDEX', color: 'text-orange-500' },
+    { icon: SiNumpy, name: 'NUMPY', color: 'text-blue-600' },
+    { icon: SiPandas, name: 'PANDAS', color: 'text-blue-700' },
+    { icon: FaCode, name: 'MATPLOTLIB', color: 'text-blue-500' },
+    { icon: FaCode, name: 'SEABORN', color: 'text-blue-400' },
+    { icon: SiScikitlearn, name: 'SCIKIT-LEARN', color: 'text-orange-500' },
+    { icon: SiPytorch, name: 'PYTORCH', color: 'text-red-500' },
+    { icon: SiTensorflow, name: 'TENSORFLOW', color: 'text-orange-500' },
+    { icon: SiKeras, name: 'KERAS', color: 'text-red-600' },
+    { icon: SiOpencv, name: 'OPENCV', color: 'text-blue-600' },
+    
+    // Programming Languages (Additional)
+    { icon: SiScala, name: 'SCALA', color: 'text-red-600' },
+    { icon: FaCode, name: 'VYPER', color: 'text-blue-500' },
+    
+    // Project Management & Communication
+    { icon: SiJira, name: 'JIRA', color: 'text-blue-600' },
+    { icon: SiSlack, name: 'SLACK', color: 'text-purple-500' },
+    { icon: SiTrello, name: 'TRELLO', color: 'text-blue-500' },
+    { icon: SiSketch, name: 'SKETCH', color: 'text-orange-500' },
+    
+    // Blockchain & Web3
+    { icon: SiSolana, name: 'SOLANA', color: 'text-purple-400' },
+    { icon: FaCode, name: 'TON', color: 'text-blue-500' },
+    { icon: SiEthereum, name: 'ETHEREUM', color: 'text-gray-400' },
+    { icon: FaCode, name: 'EVERSCALE', color: 'text-blue-400' },
+    { icon: FaCode, name: 'GOSH', color: 'text-green-500' },
+    { icon: FaCode, name: 'VENOM', color: 'text-green-400' },
+    { icon: FaCode, name: 'BROWNIE', color: 'text-orange-600' },
+    { icon: FaCode, name: 'FOUNDRY', color: 'text-gray-500' },
+    { icon: SiPolygon, name: 'POLYGON', color: 'text-purple-600' },
+    { icon: FaCode, name: 'SLITHER', color: 'text-red-500' },
+    { icon: FaCode, name: 'MANTICORE', color: 'text-blue-600' },
+    { icon: FaCode, name: 'MYTHX', color: 'text-purple-500' },
+    { icon: FaCode, name: 'ECHIDNA', color: 'text-green-500' },
+    { icon: SiOpenzeppelin, name: 'OPENZEPPELIN', color: 'text-blue-500' },
+    { icon: FaCode, name: 'WEB3.JS', color: 'text-orange-500' },
+    { icon: FaCode, name: 'ETHERS.JS', color: 'text-blue-500' },
+    { icon: FaCode, name: 'MORALIS', color: 'text-blue-400' },
+    
+    // Automation
+    { icon: FaCode, name: 'N8N', color: 'text-red-500' }
   ];
 
   useEffect(() => {
