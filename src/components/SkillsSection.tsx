@@ -134,7 +134,15 @@ import {
   SiPolygon,
   SiOpenzeppelin,
   SiDatadog,
-  SiOpencv
+  SiOpencv,
+  SiRemix,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiBlender,
+  SiTableau,
+  SiCockroachlabs,
+  SiApacheflink,
+  SiTravisci
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -216,15 +224,18 @@ const SkillsSection = () => {
     
 
     { icon: SiJquery, name: 'JQUERY MOBILE', color: 'text-blue-500' },
+    { icon: FaCode, name: 'KNOCKOUT.JS', color: 'text-red-500' },
     { icon: SiKtor, name: 'KTOR', color: 'text-orange-500' },
     { icon: SiKotlin, name: 'KOTLIN MULTIPLATFORM', color: 'text-orange-600' },
     { icon: SiLaravel, name: 'LARAVEL', color: 'text-red-500' },
     { icon: SiLit, name: 'LIT', color: 'text-blue-400' },
     { icon: FaCode, name: 'LYNX', color: 'text-teal-500' },
+    { icon: FaCode, name: 'MITHRIL.JS', color: 'text-blue-600' },
     { icon: SiNestjs, name: 'NESTJS', color: 'text-red-500' },
     
 
     { icon: SiNextdotjs, name: 'NEXT.JS', color: 'text-white' },
+    { icon: SiRemix, name: 'REMIX', color: 'text-blue-400' },
     { icon: SiNodedotjs, name: 'NODE.JS', color: 'text-green-500' },
     { icon: SiNuxtdotjs, name: 'NUXT', color: 'text-green-400' },
     { icon: SiPreact, name: 'PREACT', color: 'text-purple-500' },
@@ -240,6 +251,7 @@ const SkillsSection = () => {
     { icon: FaCode, name: 'SOLID.JS', color: 'text-blue-500' },
     { icon: SiSpring, name: 'SPRING', color: 'text-green-500' },
     { icon: SiSpringboot, name: 'SPRING BOOT', color: 'text-green-400' },
+    { icon: FaCode, name: 'STENCIL.JS', color: 'text-purple-500' },
     { icon: SiSvelte, name: 'SVELTE', color: 'text-orange-500' },
     { icon: SiSvelte, name: 'SVELTEKIT', color: 'text-orange-600' },
     { icon: SiSymfony, name: 'SYMFONY', color: 'text-gray-400' },
@@ -254,9 +266,14 @@ const SkillsSection = () => {
     { icon: SiPostgresql, name: 'POSTGRESQL', color: 'text-blue-500' },
     { icon: SiRedis, name: 'REDIS', color: 'text-red-500' },
     { icon: SiSqlite, name: 'SQLITE', color: 'text-blue-300' },
+    { icon: SiCockroachlabs, name: 'COCKROACHDB', color: 'text-blue-600' },
+    { icon: FaCode, name: 'ORIENTDB', color: 'text-orange-500' },
     { icon: SiAdobexd, name: 'ADOBE XD', color: 'text-pink-500' },
+    { icon: SiAdobeillustrator, name: 'ADOBE ILLUSTRATOR', color: 'text-orange-500' },
+    { icon: SiAdobephotoshop, name: 'ADOBE PHOTOSHOP', color: 'text-blue-600' },
     { icon: FaAws, name: 'AWS', color: 'text-orange-400' },
     { icon: SiCanva, name: 'CANVA', color: 'text-cyan-400' },
+    { icon: SiBlender, name: 'BLENDER', color: 'text-orange-600' },
     { icon: FaDocker, name: 'DOCKER', color: 'text-blue-400' },
     { icon: FaFigma, name: 'FIGMA', color: 'text-purple-400' },
     { icon: FaGitAlt, name: 'GIT', color: 'text-orange-500' },
@@ -272,6 +289,7 @@ const SkillsSection = () => {
     { icon: SiJenkins, name: 'JENKINS', color: 'text-blue-500' },
     { icon: FaCode, name: 'GITLAB CI', color: 'text-orange-400' },
     { icon: SiCircleci, name: 'CIRCLE CI', color: 'text-green-500' },
+    { icon: SiTravisci, name: 'TRAVIS CI', color: 'text-yellow-500' },
     
     // Databases
     { icon: SiMariadb, name: 'MARIADB', color: 'text-blue-800' },
@@ -295,10 +313,16 @@ const SkillsSection = () => {
     { icon: SiElasticsearch, name: 'ELASTICSEARCH', color: 'text-yellow-500' },
     { icon: SiApachesolr, name: 'APACHE SOLR', color: 'text-red-600' },
     
+    // Data Analytics & Business Intelligence
+    { icon: FaCode, name: 'POWER BI', color: 'text-yellow-600' },
+    { icon: SiTableau, name: 'TABLEAU', color: 'text-blue-500' },
+    { icon: FaCode, name: 'MICROSOFT EXCEL', color: 'text-green-600' },
+    
     // Big Data & Processing
     { icon: SiApachehadoop, name: 'APACHE HADOOP', color: 'text-yellow-600' },
     { icon: SiApachespark, name: 'APACHE SPARK', color: 'text-orange-500' },
     { icon: FaCode, name: 'APACHE HBASE', color: 'text-blue-600' },
+    { icon: SiApacheflink, name: 'APACHE FLINK', color: 'text-blue-500' },
     
     // AWS Services
     { icon: SiAmazonec2, name: 'AMAZON EC2', color: 'text-orange-400' },
@@ -348,6 +372,7 @@ const SkillsSection = () => {
     // Programming Languages (Additional)
     { icon: SiScala, name: 'SCALA', color: 'text-red-600' },
     { icon: FaCode, name: 'VYPER', color: 'text-blue-500' },
+    { icon: FaCode, name: 'DPLYR', color: 'text-blue-400' },
     
     // Project Management & Communication
     { icon: SiJira, name: 'JIRA', color: 'text-blue-600' },
