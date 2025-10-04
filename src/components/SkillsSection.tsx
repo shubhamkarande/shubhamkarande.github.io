@@ -18,7 +18,8 @@ import {
   FaGoogle,
   FaFigma,
   FaRust,
-  FaCode
+  FaCode,
+  FaHardHat
 } from 'react-icons/fa';
 import { 
   SiTypescript, 
@@ -48,6 +49,8 @@ import {
   SiAdobexd, 
   SiThreedotjs, 
   SiRedux, 
+  SiWebpack, 
+  SiXamarin, 
   SiJsonwebtokens, 
   SiC, 
   SiCplusplus, 
@@ -142,7 +145,30 @@ import {
   SiTableau,
   SiCockroachlabs,
   SiApacheflink,
-  SiTravisci
+  SiTravisci,
+  SiSolid,
+  SiGooglecloud,
+  SiApachehbase,
+  SiAmazonelasticache,
+  SiLinuxcontainers,
+  SiGnubash,
+  SiLangchain,
+  SiWeb3Dotjs,
+  SiEthers,
+  SiN8N,
+  SiApachegroovy,
+  SiFramer,
+  SiWebgl,
+  SiShadcnui,
+  SiSocketdotio,
+  SiExpo,
+  SiSupabase,
+  SiRubyonrails,
+  SiAssemblyscript,
+  SiJulia,
+  SiWebassembly,
+  SiVmware,
+  SiNginx
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -153,254 +179,285 @@ const SkillsSection = () => {
 
   const skills = [
 
-    { icon: SiC, name: 'C', color: 'text-blue-600' },
-    { icon: SiCplusplus, name: 'C++', color: 'text-blue-500' },
-    { icon: SiSharp, name: 'C#', color: 'text-purple-600' },
-    { icon: SiCss3, name: 'CSS3', color: 'text-blue-500' },
-    { icon: SiDart, name: 'DART', color: 'text-blue-400' },
-    { icon: SiGo, name: 'GO', color: 'text-cyan-500' },
-    { icon: FaCode, name: 'GROOVY', color: 'text-blue-600' },
+    // Programming Languages
+  { icon: SiAssemblyscript, name: 'Assembly', color: 'text-gray-500' },
+  { icon: SiC, name: 'C', color: 'text-blue-600' },
+  { icon: SiCplusplus, name: 'C++', color: 'text-blue-500' },
+  { icon: SiSharp, name: 'C#', color: 'text-purple-600' },
+  { icon: SiDart, name: 'Dart', color: 'text-blue-400' },
+  { icon: SiGo, name: 'Golang', color: 'text-cyan-500' },
+  { icon: SiApachegroovy, name: 'Apache Groovy', color: 'text-blue-600' },
+  { icon: FaJava, name: 'Java', color: 'text-orange-600' },
+  { icon: FaJs, name: 'JavaScript', color: 'text-yellow-400' },
+  { icon: SiJulia, name: 'Julia', color: 'text-green-600' },
+  { icon: SiKotlin, name: 'Kotlin', color: 'text-orange-500' },
+  { icon: FaCode, name: 'Objective-C', color: 'text-blue-500' },
+  { icon: FaPhp, name: 'PHP', color: 'text-indigo-500' },
+  { icon: FaPython, name: 'Python', color: 'text-yellow-500' },
+  { icon: SiR, name: 'R', color: 'text-blue-600' },
+  { icon: SiRuby, name: 'Ruby', color: 'text-red-500' },
+  { icon: FaRust, name: 'Rust', color: 'text-orange-700' },
+  { icon: SiScala, name: 'Scala', color: 'text-red-600' },
+  { icon: SiSolidity, name: 'Solidity', color: 'text-gray-400' },
+  { icon: SiSwift, name: 'Swift', color: 'text-orange-500' },
+  { icon: SiTypescript, name: 'TypeScript', color: 'text-blue-600' },
+  { icon: SiDotnet, name: 'Visual Basic', color: 'text-purple-500' },
+  { icon: FaCode, name: 'Vyper', color: 'text-blue-500' },
+  { icon: SiWebassembly, name: 'WebAssembly', color: 'text-purple-600' },
+  { icon: SiZig, name: 'Zig', color: 'text-orange-600' },
+
+  // Frontend & Markup
     { icon: FaHtml5, name: 'HTML5', color: 'text-orange-500' },
-    { icon: FaJava, name: 'JAVA', color: 'text-orange-600' },
-    { icon: FaJs, name: 'JAVASCRIPT', color: 'text-yellow-400' },
-    
+    { icon: SiCss3, name: 'CSS3', color: 'text-blue-500' },
+    { icon: SiBootstrap, name: 'Bootstrap', color: 'text-purple-600' },
+    { icon: SiTailwindcss, name: 'Tailwind CSS', color: 'text-cyan-400' },
+    { icon: SiShadcnui, name: 'shadcn/ui', color: 'text-gray-400' },
 
-    { icon: SiKotlin, name: 'KOTLIN', color: 'text-orange-500' },
-    { icon: FaCode, name: 'OBJECTIVE-C', color: 'text-blue-500' },
-    { icon: FaPhp, name: 'PHP', color: 'text-indigo-500' },
-    { icon: FaPython, name: 'PYTHON', color: 'text-yellow-500' },
-    { icon: SiR, name: 'R', color: 'text-blue-600' },
-    { icon: SiRuby, name: 'RUBY', color: 'text-red-500' },
-    { icon: FaRust, name: 'RUST', color: 'text-orange-700' },
-    { icon: SiSolidity, name: 'SOLIDITY', color: 'text-gray-400' },
-    { icon: SiSwift, name: 'SWIFT', color: 'text-orange-500' },
-    
+  // Package Managers
+    { icon: SiNpm, name: 'npm', color: 'text-red-500' },
+    { icon: SiYarn, name: 'Yarn', color: 'text-blue-400' },
+    { icon: SiPnpm, name: 'pnpm', color: 'text-orange-500' },
+    { icon: SiBun, name: 'Bun', color: 'text-gray-300' },
+    { icon: SiComposer, name: 'Composer', color: 'text-orange-600' },
+    { icon: SiDeno, name: 'Deno', color: 'text-gray-400' },
+    { icon: FaCode, name: 'Apache Maven', color: 'text-orange-600' },
 
-    { icon: SiTypescript, name: 'TYPESCRIPT', color: 'text-blue-600' },
-    { icon: SiDotnet, name: 'VB.NET', color: 'text-purple-500' },
-    { icon: SiZig, name: 'ZIG', color: 'text-orange-600' },
-    { icon: SiNpm, name: 'NPM', color: 'text-red-500' },
-    { icon: SiYarn, name: 'YARN', color: 'text-blue-400' },
-    { icon: SiPnpm, name: 'PNPM', color: 'text-orange-500' },
-    { icon: SiBun, name: 'BUN', color: 'text-gray-300' },
-    { icon: SiComposer, name: 'COMPOSER', color: 'text-orange-600' },
-    { icon: SiDeno, name: 'DENO', color: 'text-gray-400' },
-    
+  // Frontend Frameworks & Libraries
+    { icon: FaAngular, name: 'Angular', color: 'text-red-600' },
+    { icon: FaAngular, name: 'AngularJS', color: 'text-red-500' },
+    { icon: SiAlpinedotjs, name: 'Alpine.js', color: 'text-teal-500' },
+    { icon: SiAstro, name: 'Astro', color: 'text-orange-500' },
+    { icon: SiBackbonedotjs, name: 'Backbone.js', color: 'text-blue-500' },
+    { icon: SiEmberdotjs, name: 'Ember.js', color: 'text-orange-600' },
+    { icon: SiGatsby, name: 'Gatsby', color: 'text-purple-600' },
+    { icon: SiJquery, name: 'jQuery', color: 'text-blue-600' },
+    { icon: SiJquery, name: 'jQuery Mobile', color: 'text-blue-500' },
+    { icon: FaCode, name: 'Knockout.js', color: 'text-red-500' },
+    { icon: SiLit, name: 'Lit', color: 'text-blue-400' },
+    { icon: FaCode, name: 'Lynx', color: 'text-teal-500' },
+    { icon: FaCode, name: 'Mithril.js', color: 'text-blue-600' },
+    { icon: SiNextdotjs, name: 'Next.js', color: 'text-white' },
+    { icon: SiNuxtdotjs, name: 'Nuxt', color: 'text-green-400' },
+    { icon: SiPreact, name: 'Preact', color: 'text-purple-500' },
+    { icon: SiQwik, name: 'Qwik', color: 'text-blue-500' },
+    { icon: FaReact, name: 'React', color: 'text-cyan-300' },
+    { icon: SiRemix, name: 'Remix', color: 'text-blue-400' },
+    { icon: SiRedux, name: 'Redux', color: 'text-purple-600' },
+    { icon: SiSolid, name: 'SolidJS', color: 'text-blue-500' },
+    { icon: FaCode, name: 'Stencil.js', color: 'text-purple-500' },
+    { icon: SiSvelte, name: 'Svelte', color: 'text-orange-600' },
+    { icon: SiSvelte, name: 'SvelteKit', color: 'text-orange-600' },
+    { icon: FaCode, name: 'RippleJS', color: 'text-blue-400' },
+    { icon: SiVite, name: 'Vite', color: 'text-purple-500' },
+    { icon: SiWebpack, name: 'Webpack', color: 'text-blue-500' },
 
+  // Backend Frameworks
     { icon: SiDotnet, name: '.NET', color: 'text-purple-600' },
-    { icon: SiDotnet, name: '.NET CORE', color: 'text-purple-500' },
-    { icon: SiDotnet, name: '.NET FRAMEWORK', color: 'text-purple-600' },
-    { icon: SiDotnet, name: '.NET MAUI', color: 'text-purple-400' },
-    { icon: SiAlpinedotjs, name: 'ALPINE.JS', color: 'text-teal-500' },
-    { icon: FaAngular, name: 'ANGULAR', color: 'text-red-600' },
-    { icon: FaAngular, name: 'ANGULARJS', color: 'text-red-500' },
-    
-
+    { icon: SiDotnet, name: '.NET Core', color: 'text-purple-500' },
+    { icon: SiDotnet, name: '.NET Fra', color: 'text-purple-600' },
     { icon: SiDotnet, name: 'ASP.NET', color: 'text-purple-600' },
-    { icon: SiDotnet, name: 'ASP.NET CORE', color: 'text-purple-500' },
-    { icon: SiAstro, name: 'ASTRO', color: 'text-orange-500' },
-    { icon: SiBackbonedotjs, name: 'BACKBONE.JS', color: 'text-blue-500' },
-    { icon: SiBootstrap, name: 'BOOTSTRAP', color: 'text-purple-600' },
-    { icon: SiCakephp, name: 'CAKEPHP', color: 'text-red-500' },
-    { icon: SiDjango, name: 'DJANGO', color: 'text-green-600' },
-    
+    { icon: SiDotnet, name: 'ASP.NET Core', color: 'text-purple-500' },
+    { icon: SiCakephp, name: 'CakePHP', color: 'text-red-500' },
+    { icon: SiDjango, name: 'Django', color: 'text-green-600' },
+    { icon: SiExpress, name: 'Express', color: 'text-gray-400' },
+    { icon: SiFastapi, name: 'FastAPI', color: 'text-teal-500' },
+    { icon: SiFlask, name: 'Flask', color: 'text-gray-300' },
+    { icon: SiGin, name: 'Gin', color: 'text-cyan-400' },
+    { icon: SiKtor, name: 'Ktor', color: 'text-orange-500' },
+    { icon: SiLaravel, name: 'Laravel', color: 'text-red-500' },
+    { icon: SiRubyonrails, name: 'Ruby on Rails', color: 'text-red-500' },
+    { icon: SiNestjs, name: 'NestJS', color: 'text-red-500' },
+    { icon: SiNodedotjs, name: 'Node.js', color: 'text-green-500' },
+    { icon: FaCode, name: 'Revel', color: 'text-teal-500' },
+    { icon: SiRocket, name: 'Rocket', color: 'text-orange-600' },
+    { icon: SiSpring, name: 'Spring', color: 'text-green-500' },
+    { icon: SiSpringboot, name: 'Spring Boot', color: 'text-green-400' },
+    { icon: SiSymfony, name: 'Symfony', color: 'text-gray-400' },
 
-    { icon: SiElectron, name: 'ELECTRON', color: 'text-teal-400' },
-    { icon: SiEmberdotjs, name: 'EMBER.JS', color: 'text-orange-600' },
-    { icon: SiExpress, name: 'EXPRESS.JS', color: 'text-gray-400' },
-    { icon: SiFastapi, name: 'FASTAPI', color: 'text-teal-500' },
-    { icon: SiFlask, name: 'FLASK', color: 'text-gray-300' },
-    { icon: SiFlutter, name: 'FLUTTER', color: 'text-blue-400' },
-    { icon: FaCode, name: 'GANACHE', color: 'text-orange-600' },
-    
+  // Mobile Development
+    { icon: SiDotnet, name: '.NET MAUI', color: 'text-purple-400' },
+    { icon: SiExpo, name: 'Expo', color: 'text-blue-500' },
+    { icon: SiFlutter, name: 'Flutter', color: 'text-blue-400' },
+    { icon: SiIonic, name: 'Ionic', color: 'text-blue-500' },
+    { icon: SiJetpackcompose, name: 'Jetpack Compose', color: 'text-blue-600' },
+    { icon: SiKotlin, name: 'Kotlin Multiplatform', color: 'text-orange-600' },
+    { icon: FaReact, name: 'React Native', color: 'text-cyan-300' },
+    { icon: FaCode, name: 'Xamarin', color: 'text-blue-600' },
 
-    { icon: SiGatsby, name: 'GATSBY', color: 'text-purple-600' },
-    { icon: SiGin, name: 'GIN', color: 'text-cyan-400' },
-    { icon: FaCode, name: 'HARDHAT', color: 'text-yellow-500' },
-    { icon: SiGraphql, name: 'GRAPHQL', color: 'text-pink-500' },
-    { icon: SiIonic, name: 'IONIC', color: 'text-blue-500' },
-    { icon: SiJetpackcompose, name: 'JETPACK COMPOSE', color: 'text-blue-600' },
-    { icon: SiJquery, name: 'JQUERY', color: 'text-blue-600' },
-    
+  // Desktop Development
+    { icon: SiElectron, name: 'Electron', color: 'text-teal-400' },
+    { icon: SiQt, name: 'PyQt', color: 'text-green-500' },
+    { icon: SiQt, name: 'Qt', color: 'text-green-600' },
+    { icon: SiTauri, name: 'Tauri', color: 'text-orange-500' },
+    { icon: SiVmware, name: 'VMware', color: 'text-blue-400' },
 
-    { icon: SiJquery, name: 'JQUERY MOBILE', color: 'text-blue-500' },
-    { icon: FaCode, name: 'KNOCKOUT.JS', color: 'text-red-500' },
-    { icon: SiKtor, name: 'KTOR', color: 'text-orange-500' },
-    { icon: SiKotlin, name: 'KOTLIN MULTIPLATFORM', color: 'text-orange-600' },
-    { icon: SiLaravel, name: 'LARAVEL', color: 'text-red-500' },
-    { icon: SiLit, name: 'LIT', color: 'text-blue-400' },
-    { icon: FaCode, name: 'LYNX', color: 'text-teal-500' },
-    { icon: FaCode, name: 'MITHRIL.JS', color: 'text-blue-600' },
-    { icon: SiNestjs, name: 'NESTJS', color: 'text-red-500' },
-    
-
-    { icon: SiNextdotjs, name: 'NEXT.JS', color: 'text-white' },
-    { icon: SiRemix, name: 'REMIX', color: 'text-blue-400' },
-    { icon: SiNodedotjs, name: 'NODE.JS', color: 'text-green-500' },
-    { icon: SiNuxtdotjs, name: 'NUXT', color: 'text-green-400' },
-    { icon: SiPreact, name: 'PREACT', color: 'text-purple-500' },
-    { icon: SiPostman, name: 'POSTMAN', color: 'text-orange-500' },
-    { icon: SiQt, name: 'PYQT', color: 'text-green-500' },
-    { icon: SiQt, name: 'QT', color: 'text-green-600' },
-    { icon: SiQwik, name: 'QWIK', color: 'text-blue-500' },
-    { icon: FaReact, name: 'REACT NATIVE', color: 'text-cyan-300' },
-    { icon: SiRedux, name: 'REDUX', color: 'text-purple-600' },
-    { icon: SiJsonwebtokens, name: 'RESTFUL API', color: 'text-green-400' },
-    { icon: SiRocket, name: 'REVEL', color: 'text-teal-500' },
-    { icon: SiRocket, name: 'ROCKET', color: 'text-orange-600' },
-    { icon: FaCode, name: 'SOLID.JS', color: 'text-blue-500' },
-    { icon: SiSpring, name: 'SPRING', color: 'text-green-500' },
-    { icon: SiSpringboot, name: 'SPRING BOOT', color: 'text-green-400' },
-    { icon: FaCode, name: 'STENCIL.JS', color: 'text-purple-500' },
-    { icon: SiSvelte, name: 'SVELTE', color: 'text-orange-500' },
-    { icon: SiSvelte, name: 'SVELTEKIT', color: 'text-orange-600' },
-    { icon: SiSymfony, name: 'SYMFONY', color: 'text-gray-400' },
-    { icon: SiTailwindcss, name: 'TAILWIND CSS', color: 'text-cyan-400' },
-    { icon: SiTauri, name: 'TAURI', color: 'text-orange-500' },
-    { icon: SiThreedotjs, name: 'THREE.JS', color: 'text-white' },
-    { icon: FaCode, name: 'TRUFFLE', color: 'text-orange-600' },
-    { icon: SiVite, name: 'VITE', color: 'text-purple-500' },
-    { icon: SiFirebase, name: 'FIREBASE', color: 'text-yellow-500' },
-    { icon: SiMongodb, name: 'MONGODB', color: 'text-green-500' },
-    { icon: SiMysql, name: 'MYSQL', color: 'text-blue-600' },
-    { icon: SiPostgresql, name: 'POSTGRESQL', color: 'text-blue-500' },
-    { icon: SiRedis, name: 'REDIS', color: 'text-red-500' },
-    { icon: SiSqlite, name: 'SQLITE', color: 'text-blue-300' },
-    { icon: SiCockroachlabs, name: 'COCKROACHDB', color: 'text-blue-600' },
-    { icon: FaCode, name: 'ORIENTDB', color: 'text-orange-500' },
-    { icon: SiAdobexd, name: 'ADOBE XD', color: 'text-pink-500' },
-    { icon: SiAdobeillustrator, name: 'ADOBE ILLUSTRATOR', color: 'text-orange-500' },
-    { icon: SiAdobephotoshop, name: 'ADOBE PHOTOSHOP', color: 'text-blue-600' },
-    { icon: FaAws, name: 'AWS', color: 'text-orange-400' },
-    { icon: SiCanva, name: 'CANVA', color: 'text-cyan-400' },
-    { icon: SiBlender, name: 'BLENDER', color: 'text-orange-600' },
-    { icon: FaDocker, name: 'DOCKER', color: 'text-blue-400' },
-    { icon: FaFigma, name: 'FIGMA', color: 'text-purple-400' },
-    { icon: FaGitAlt, name: 'GIT', color: 'text-orange-500' },
-    { icon: SiGithub, name: 'GITHUB', color: 'text-gray-400' },
-    { icon: FaGoogle, name: 'GOOGLE CLOUD', color: 'text-blue-400' },
-    { icon: SiKubernetes, name: 'KUBERNETES', color: 'text-blue-500' },
-    { icon: FaMicrosoft, name: 'MICROSOFT AZURE', color: 'text-blue-500' },
-    { icon: SiWordpress, name: 'WORDPRESS', color: 'text-blue-600' },
-    
-    // Version Control & DevOps
-    { icon: SiGitlab, name: 'GITLAB', color: 'text-orange-500' },
-    { icon: SiBitbucket, name: 'BITBUCKET', color: 'text-blue-600' },
-    { icon: SiJenkins, name: 'JENKINS', color: 'text-blue-500' },
-    { icon: FaCode, name: 'GITLAB CI', color: 'text-orange-400' },
-    { icon: SiCircleci, name: 'CIRCLE CI', color: 'text-green-500' },
-    { icon: SiTravisci, name: 'TRAVIS CI', color: 'text-yellow-500' },
-    
-    // Databases
-    { icon: SiMariadb, name: 'MARIADB', color: 'text-blue-800' },
-    { icon: FaCode, name: 'MICROSOFT SQL', color: 'text-red-600' },
-    { icon: SiOracle, name: 'ORACLE DATABASE', color: 'text-red-500' },
-    { icon: FaCode, name: 'MEMCACHED', color: 'text-green-400' },
-    { icon: SiApachecouchdb, name: 'APACHE COUCHDB', color: 'text-red-500' },
-    { icon: SiAmazondynamodb, name: 'AMAZON DYNAMODB', color: 'text-orange-500' },
-    { icon: FaCode, name: 'RETHINKDB', color: 'text-blue-400' },
-    { icon: SiApachecassandra, name: 'APACHE CASSANDRA', color: 'text-cyan-400' },
-    { icon: SiNeo4J, name: 'NEO4J', color: 'text-blue-500' },
-    { icon: FaCode, name: 'AMAZON NEPTUNE', color: 'text-blue-400' },
-    { icon: FaCode, name: 'TIMESCALEDB', color: 'text-orange-500' },
-    { icon: FaCode, name: 'COSMOS DB', color: 'text-purple-500' },
-    
-    // Message Queues & Streaming
-    { icon: SiApachekafka, name: 'APACHE KAFKA', color: 'text-gray-700' },
-    { icon: SiRabbitmq, name: 'RABBITMQ', color: 'text-orange-600' },
-    
-    // Search & Analytics
-    { icon: SiElasticsearch, name: 'ELASTICSEARCH', color: 'text-yellow-500' },
-    { icon: SiApachesolr, name: 'APACHE SOLR', color: 'text-red-600' },
-    
-    // Data Analytics & Business Intelligence
-    { icon: FaCode, name: 'POWER BI', color: 'text-yellow-600' },
-    { icon: SiTableau, name: 'TABLEAU', color: 'text-blue-500' },
-    { icon: FaCode, name: 'MICROSOFT EXCEL', color: 'text-green-600' },
-    
-    // Big Data & Processing
-    { icon: SiApachehadoop, name: 'APACHE HADOOP', color: 'text-yellow-600' },
-    { icon: SiApachespark, name: 'APACHE SPARK', color: 'text-orange-500' },
-    { icon: FaCode, name: 'APACHE HBASE', color: 'text-blue-600' },
-    { icon: SiApacheflink, name: 'APACHE FLINK', color: 'text-blue-500' },
-    
-    // AWS Services
-    { icon: SiAmazonec2, name: 'AMAZON EC2', color: 'text-orange-400' },
-    { icon: SiAwslambda, name: 'AMAZON LAMBDA', color: 'text-orange-500' },
-    { icon: SiAmazonecs, name: 'AMAZON ECS', color: 'text-orange-400' },
-    { icon: SiAmazons3, name: 'AMAZON S3', color: 'text-orange-500' },
-    { icon: SiAmazonrds, name: 'AMAZON RDS', color: 'text-blue-600' },
-    { icon: FaCode, name: 'AMAZON ELASTICACHE', color: 'text-red-500' },
-    { icon: FaCode, name: 'AMAZON SAGEMAKER', color: 'text-green-500' },
-    { icon: SiAmazonredshift, name: 'AMAZON REDSHIFT', color: 'text-red-600' },
-    { icon: FaCode, name: 'AMAZON CLOUDFRONT', color: 'text-orange-400' },
-    
-    // APIs & Protocols
-    { icon: FaCode, name: 'GRPC', color: 'text-blue-500' },
-    { icon: FaCode, name: 'SOAP API', color: 'text-green-500' },
+  // APIs & Protocols
+    { icon: SiGraphql, name: 'GraphQL', color: 'text-pink-500' },
+    { icon: FaCode, name: 'gRPC', color: 'text-blue-500' },
     { icon: SiJsonwebtokens, name: 'REST API', color: 'text-green-400' },
-    { icon: FaCode, name: 'WEBSOCKETS', color: 'text-blue-400' },
-    
-    // Containers & Infrastructure
-    { icon: FaCode, name: 'LINUX CONTAINERS', color: 'text-yellow-500' },
-    { icon: SiApachetomcat, name: 'APACHE TOMCAT', color: 'text-yellow-600' },
-    { icon: SiCloudflare, name: 'CLOUDFLARE', color: 'text-orange-500' },
-    
-    // Shell & Scripting
-    { icon: FaCode, name: 'BASH', color: 'text-gray-400' },
-    { icon: FaCode, name: 'POWERSHELL', color: 'text-blue-500' },
-    
-    // Monitoring & Observability
-    { icon: SiPrometheus, name: 'PROMETHEUS', color: 'text-orange-500' },
-    { icon: SiGrafana, name: 'GRAFANA', color: 'text-orange-600' },
-    { icon: SiDatadog, name: 'DATADOG', color: 'text-purple-600' },
-    
-    // AI & Machine Learning
-    { icon: FaCode, name: 'LANGCHAIN', color: 'text-green-400' },
-    { icon: FaCode, name: 'MCP SERVERS', color: 'text-blue-500' },
-    { icon: FaCode, name: 'LLAMAINDEX', color: 'text-orange-500' },
-    { icon: SiNumpy, name: 'NUMPY', color: 'text-blue-600' },
-    { icon: SiPandas, name: 'PANDAS', color: 'text-blue-700' },
-    { icon: FaCode, name: 'MATPLOTLIB', color: 'text-blue-500' },
-    { icon: FaCode, name: 'SEABORN', color: 'text-blue-400' },
-    { icon: SiScikitlearn, name: 'SCIKIT-LEARN', color: 'text-orange-500' },
-    { icon: SiPytorch, name: 'PYTORCH', color: 'text-red-500' },
-    { icon: SiTensorflow, name: 'TENSORFLOW', color: 'text-orange-500' },
-    { icon: SiKeras, name: 'KERAS', color: 'text-red-600' },
-    { icon: SiOpencv, name: 'OPENCV', color: 'text-blue-600' },
-    
-    // Programming Languages (Additional)
-    { icon: SiScala, name: 'SCALA', color: 'text-red-600' },
-    { icon: FaCode, name: 'VYPER', color: 'text-blue-500' },
-    { icon: FaCode, name: 'DPLYR', color: 'text-blue-400' },
-    
-    // Project Management & Communication
-    { icon: SiJira, name: 'JIRA', color: 'text-blue-600' },
-    { icon: SiSlack, name: 'SLACK', color: 'text-purple-500' },
-    { icon: SiTrello, name: 'TRELLO', color: 'text-blue-500' },
-    { icon: SiSketch, name: 'SKETCH', color: 'text-orange-500' },
-    
-    // Blockchain & Web3
-    { icon: SiSolana, name: 'SOLANA', color: 'text-purple-400' },
-    { icon: FaCode, name: 'TON', color: 'text-blue-500' },
-    { icon: SiEthereum, name: 'ETHEREUM', color: 'text-gray-400' },
-    { icon: FaCode, name: 'EVERSCALE', color: 'text-blue-400' },
+    { icon: SiJsonwebtokens, name: 'RESTful API', color: 'text-green-400' },
+    { icon: FaCode, name: 'SOAP API', color: 'text-green-500' },
+    { icon: FaCode, name: 'WebSockets', color: 'text-blue-400' },
+    { icon: SiSocketdotio, name: 'Socket.IO', color: 'text-gray-500' },
+    { icon: SiPostman, name: 'Postman', color: 'text-orange-500' },
+
+  // Animation & 3D Libraries
+    { icon: FaCode, name: 'Anime.js', color: 'text-pink-500' },
+    { icon: SiFramer, name: 'Framer Motion', color: 'text-purple-500' },
+    { icon: FaCode, name: 'GSAP', color: 'text-green-500' },
+    { icon: FaCode, name: 'Lenis', color: 'text-orange-500' },
+    { icon: FaCode, name: 'LottieFiles', color: 'text-yellow-500' },
+    { icon: FaCode, name: 'Spline', color: 'text-blue-500' },
+    { icon: SiThreedotjs, name: 'Three.js', color: 'text-white' },
+    { icon: SiWebgl, name: 'WebGL', color: 'text-cyan-500' },
+
+  // Databases - SQL
+    { icon: SiCockroachlabs, name: 'CockroachDB', color: 'text-blue-600' },
+    { icon: SiMariadb, name: 'MariaDB', color: 'text-blue-800' },
+    { icon: FaCode, name: 'Microsoft SQL', color: 'text-red-600' },
+    { icon: SiMysql, name: 'MySQL', color: 'text-blue-600' },
+    { icon: SiOracle, name: 'Oracle Database', color: 'text-red-500' },
+    { icon: SiPostgresql, name: 'PostgreSQL', color: 'text-blue-500' },
+    { icon: SiSqlite, name: 'SQLite', color: 'text-blue-300' },
+    { icon: SiSupabase, name: 'Supabase', color: 'text-green-500' },
+
+  // Databases - NoSQL
+    { icon: SiAmazondynamodb, name: 'Amazon DynamoDB', color: 'text-orange-500' },
+    { icon: SiApachecassandra, name: 'Apache Cassandra', color: 'text-cyan-400' },
+    { icon: SiApachecouchdb, name: 'Apache CouchDB', color: 'text-red-500' },
+    { icon: FaCode, name: 'Azure Cosmos DB', color: 'text-purple-500' },
+    { icon: SiFirebase, name: 'Firebase', color: 'text-yellow-500' },
+    { icon: SiMongodb, name: 'MongoDB', color: 'text-green-500' },
+    { icon: SiNeo4J, name: 'Neo4j', color: 'text-blue-500' },
+    { icon: FaCode, name: 'OrientDB', color: 'text-orange-500' },
+    { icon: SiRedis, name: 'Redis', color: 'text-red-500' },
+    { icon: FaCode, name: 'RethinkDB', color: 'text-blue-400' },
+
+  // Databases - Specialized
+    { icon: FaCode, name: 'Amazon Neptune', color: 'text-blue-400' },
+    { icon: FaCode, name: 'Amazon Bedrock', color: 'text-orange-400' },
+    { icon: SiAmazonrds, name: 'Amazon RDS', color: 'text-blue-600' },
+    { icon: SiAmazonredshift, name: 'Amazon Redshift', color: 'text-red-600' },
+    { icon: FaCode, name: 'TimescaleDB', color: 'text-orange-500' },
+
+  // Caching & In-Memory
+    { icon: SiAmazonelasticache, name: 'Amazon ElastiCache', color: 'text-red-500' },
+    { icon: FaCode, name: 'Memcached', color: 'text-green-400' },
+
+  // Message Queues & Streaming
+    { icon: SiApachekafka, name: 'Apache Kafka', color: 'text-gray-700' },
+    { icon: SiRabbitmq, name: 'RabbitMQ', color: 'text-orange-600' },
+
+  // Search & Analytics
+    { icon: SiElasticsearch, name: 'Elasticsearch', color: 'text-yellow-500' },
+    { icon: SiApachesolr, name: 'Apache Solr', color: 'text-red-600' },
+
+  // Big Data & Processing
+    { icon: SiApacheflink, name: 'Apache Flink', color: 'text-blue-500' },
+    { icon: SiApachehadoop, name: 'Apache Hadoop', color: 'text-yellow-600' },
+    { icon: SiApachehbase, name: 'Apache HBase', color: 'text-blue-600' },
+    { icon: SiApachespark, name: 'Apache Spark', color: 'text-orange-500' },
+
+  // Business Intelligence & Visualization
+    { icon: FaCode, name: 'Microsoft Excel', color: 'text-green-600' },
+    { icon: FaCode, name: 'Power BI', color: 'text-yellow-600' },
+    { icon: SiTableau, name: 'Tableau', color: 'text-blue-500' },
+
+  // Cloud Platforms
+    { icon: FaAws, name: 'Amazon Web Services', color: 'text-orange-400' },
+    { icon: SiGooglecloud, name: 'Google Cloud', color: 'text-blue-400' },
+    { icon: FaMicrosoft, name: 'Microsoft Azure', color: 'text-blue-500' },
+
+  // AWS Services
+    { icon: FaCode, name: 'Amazon CloudFront', color: 'text-orange-400' },
+    { icon: SiAmazonec2, name: 'Amazon EC2', color: 'text-orange-400' },
+    { icon: SiAmazonecs, name: 'Amazon ECS', color: 'text-orange-400' },
+    { icon: SiAwslambda, name: 'Amazon Lambda', color: 'text-orange-500' },
+    { icon: SiAmazons3, name: 'Amazon S3', color: 'text-orange-500' },
+    { icon: FaCode, name: 'Amazon SageMaker', color: 'text-green-500' },
+
+  // Containers & Orchestration
+    { icon: FaDocker, name: 'Docker', color: 'text-blue-400' },
+    { icon: SiKubernetes, name: 'Kubernetes', color: 'text-blue-500' },
+    { icon: SiLinuxcontainers, name: 'Linux Containers', color: 'text-yellow-500' },
+
+  // Version Control
+    { icon: SiBitbucket, name: 'Bitbucket', color: 'text-blue-600' },
+    { icon: FaGitAlt, name: 'Git', color: 'text-orange-500' },
+    { icon: SiGithub, name: 'GitHub', color: 'text-gray-400' },
+    { icon: SiGitlab, name: 'GitLab', color: 'text-orange-500' },
+
+  // CI/CD
+    { icon: SiCircleci, name: 'CircleCI', color: 'text-green-500' },
+    { icon: SiGitlab, name: 'GitLab CI/CD', color: 'text-orange-500' },
+    { icon: SiJenkins, name: 'Jenkins', color: 'text-blue-500' },
+    { icon: SiTravisci, name: 'Travis CI', color: 'text-yellow-500' },
+
+  // Infrastructure & Networking
+    { icon: SiApachetomcat, name: 'Apache Tomcat', color: 'text-yellow-600' },
+    { icon: SiCloudflare, name: 'Cloudflare', color: 'text-orange-500' },
+    { icon: SiNginx, name: 'nginx', color: 'text-green-600' },
+
+  // Shell & Scripting
+    { icon: SiGnubash, name: 'Bash', color: 'text-gray-400' },
+
+  // Monitoring & Observability
+    { icon: SiDatadog, name: 'Datadog', color: 'text-purple-600' },
+    { icon: SiGrafana, name: 'Grafana', color: 'text-orange-600' },
+    { icon: SiPrometheus, name: 'Prometheus', color: 'text-orange-500' },
+
+  // Machine Learning & AI
+    { icon: SiKeras, name: 'Keras', color: 'text-red-600' },
+    { icon: SiLangchain, name: 'LangChain', color: 'text-green-400' },
+    { icon: FaCode, name: 'LlamaIndex', color: 'text-orange-500' },
+    { icon: FaCode, name: 'Matplotlib', color: 'text-blue-500' },
+    { icon: FaCode, name: 'MCP Server', color: 'text-blue-500' },
+    { icon: SiNumpy, name: 'NumPy', color: 'text-blue-600' },
+    { icon: SiOpencv, name: 'OpenCV', color: 'text-blue-600' },
+    { icon: SiPandas, name: 'pandas', color: 'text-blue-700' },
+    { icon: SiPytorch, name: 'PyTorch', color: 'text-red-500' },
+    { icon: SiScikitlearn, name: 'Scikit-learn', color: 'text-orange-500' },
+    { icon: FaCode, name: 'seaborn', color: 'text-blue-400' },
+    { icon: SiTensorflow, name: 'TensorFlow', color: 'text-orange-500' },
+    { icon: FaCode, name: 'dplyr', color: 'text-blue-400' },
+
+  // Blockchain & Web3
+    { icon: FaCode, name: 'Brownie', color: 'text-orange-600' },
+    { icon: FaCode, name: 'Echidna', color: 'text-green-500' },
+    { icon: SiEthers, name: 'Ethers.js', color: 'text-blue-500' },
+    { icon: SiEthereum, name: 'Ethereum', color: 'text-gray-400' },
+    { icon: FaCode, name: 'Everscale', color: 'text-blue-400' },
+    { icon: FaCode, name: 'Foundry', color: 'text-gray-500' },
+    { icon: FaCode, name: 'Ganache', color: 'text-orange-600' },
     { icon: FaCode, name: 'GOSH', color: 'text-green-500' },
-    { icon: FaCode, name: 'VENOM', color: 'text-green-400' },
-    { icon: FaCode, name: 'BROWNIE', color: 'text-orange-600' },
-    { icon: FaCode, name: 'FOUNDRY', color: 'text-gray-500' },
-    { icon: SiPolygon, name: 'POLYGON', color: 'text-purple-600' },
-    { icon: FaCode, name: 'SLITHER', color: 'text-red-500' },
-    { icon: FaCode, name: 'MANTICORE', color: 'text-blue-600' },
-    { icon: FaCode, name: 'MYTHX', color: 'text-purple-500' },
-    { icon: FaCode, name: 'ECHIDNA', color: 'text-green-500' },
-    { icon: SiOpenzeppelin, name: 'OPENZEPPELIN', color: 'text-blue-500' },
-    { icon: FaCode, name: 'WEB3.JS', color: 'text-orange-500' },
-    { icon: FaCode, name: 'ETHERS.JS', color: 'text-blue-500' },
-    { icon: FaCode, name: 'MORALIS', color: 'text-blue-400' },
-    
-    // Automation
-    { icon: FaCode, name: 'N8N', color: 'text-red-500' }
+    { icon: FaHardHat, name: 'Hardhat', color: 'text-yellow-500' },
+    { icon: FaCode, name: 'Manticore', color: 'text-blue-600' },
+    { icon: FaCode, name: 'Moralis', color: 'text-blue-400' },
+    { icon: FaCode, name: 'MythX', color: 'text-purple-500' },
+    { icon: SiOpenzeppelin, name: 'OpenZeppelin', color: 'text-blue-500' },
+    { icon: SiPolygon, name: 'Polygon', color: 'text-purple-600' },
+    { icon: FaCode, name: 'Slither', color: 'text-red-500' },
+    { icon: SiSolana, name: 'Solana', color: 'text-purple-400' },
+    { icon: FaCode, name: 'TON', color: 'text-blue-500' },
+    { icon: FaCode, name: 'Truffle Suite', color: 'text-orange-600' },
+    { icon: FaCode, name: 'Venom', color: 'text-green-400' },
+    { icon: SiWeb3Dotjs, name: 'Web3.js', color: 'text-orange-500' },
+
+  // Design & Creative Tools
+    { icon: SiAdobeillustrator, name: 'Adobe Illustrator', color: 'text-orange-500' },
+    { icon: SiAdobexd, name: 'Adobe XD', color: 'text-pink-500' },
+    { icon: SiAdobephotoshop, name: 'Adobe Photoshop', color: 'text-blue-600' },
+    { icon: SiBlender, name: 'Blender', color: 'text-orange-600' },
+    { icon: SiCanva, name: 'Canva', color: 'text-cyan-400' },
+    { icon: FaFigma, name: 'Figma', color: 'text-purple-400' },
+
+  // Project Management & Communication
+    { icon: SiJira, name: 'Jira', color: 'text-blue-600' },
+    { icon: SiTrello, name: 'Trello', color: 'text-blue-500' },
+
+  // CMS & Other Tools
+    { icon: SiN8N, name: 'n8n', color: 'text-red-500' },
+    { icon: SiWordpress, name: 'WordPress', color: 'text-blue-600' }
   ];
 
   useEffect(() => {
