@@ -168,7 +168,8 @@ import {
   SiJulia,
   SiWebassembly,
   SiVmware,
-  SiNginx
+  SiNginx,
+  SiApachemaven
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -220,7 +221,7 @@ const SkillsSection = () => {
     { icon: SiBun, name: 'Bun', color: 'text-gray-300' },
     { icon: SiComposer, name: 'Composer', color: 'text-orange-600' },
     { icon: SiDeno, name: 'Deno', color: 'text-gray-400' },
-    { icon: FaCode, name: 'Apache Maven', color: 'text-orange-600' },
+    { icon: SiApachemaven, name: 'Apache Maven', color: 'text-orange-600' },
 
   // Frontend Frameworks & Libraries
     { icon: FaAngular, name: 'Angular', color: 'text-red-600' },

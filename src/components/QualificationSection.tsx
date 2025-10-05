@@ -35,7 +35,7 @@ const QualificationSection = () => {
   const experience = [
     {
       position: "Software Engineer",
-      company: "Vserv",
+      company: "Vserv Digital Services Pvt. Ltd.",
       period: "August 2025 - Present",
       type: "Full-time",
       workMode: "On-site",
