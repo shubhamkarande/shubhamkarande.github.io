@@ -192,7 +192,9 @@ import {
   SiGnuemacs,
   SiCaddy,
   SiAlibabacloud,
-  SiHtmx
+  SiHtmx,
+  SiApachemaven,
+  SiStencil
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -234,7 +236,7 @@ const SkillsSection = () => {
   { icon: FaCode, name: 'NLTK', color: 'text-blue-500' },
   { icon: FaCode, name: 'Theano', color: 'text-orange-500' },
   { icon: FaCode, name: 'PyBrain', color: 'text-blue-500' },
-  { icon: FaCode, name: 'DL4J', color: 'text-red-500' },
+  { icon: FaCode, name: 'Deeplearning4j', color: 'text-red-500' },
   { icon: FaCode, name: 'LightGBM', color: 'text-orange-500' },
   { icon: FaCode, name: 'Apache MXNet', color: 'text-orange-600' },
 
@@ -253,7 +255,7 @@ const SkillsSection = () => {
     { icon: SiBun, name: 'Bun', color: 'text-gray-300' },
     { icon: SiComposer, name: 'Composer', color: 'text-orange-600' },
     { icon: SiDeno, name: 'Deno', color: 'text-gray-400' },
-    { icon: FaCode, name: 'Apache Maven', color: 'text-orange-600' },
+    { icon: SiApachemaven, name: 'Apache Maven', color: 'text-orange-600' },
 
   // Frontend Frameworks & Libraries
     { icon: FaAngular, name: 'Angular', color: 'text-red-600' },
@@ -278,7 +280,7 @@ const SkillsSection = () => {
     { icon: SiRemix, name: 'Remix', color: 'text-blue-400' },
     { icon: SiRedux, name: 'Redux', color: 'text-purple-600' },
     { icon: SiSolid, name: 'SolidJS', color: 'text-blue-500' },
-    { icon: FaCode, name: 'Stencil.js', color: 'text-purple-500' },
+    { icon: SiStencil, name: 'Stencil.js', color: 'text-purple-500' },
     { icon: SiSvelte, name: 'Svelte', color: 'text-orange-600' },
     { icon: SiSvelte, name: 'SvelteKit', color: 'text-orange-600' },
     { icon: FaCode, name: 'RippleJS', color: 'text-blue-400' },
@@ -291,7 +293,7 @@ const SkillsSection = () => {
   // Backend Frameworks
     { icon: SiDotnet, name: '.NET', color: 'text-purple-600' },
     { icon: SiDotnet, name: '.NET Core', color: 'text-purple-500' },
-    { icon: SiDotnet, name: '.NET Fra', color: 'text-purple-600' },
+    { icon: SiDotnet, name: '.NET Framework', color: 'text-purple-600' },
     { icon: SiDotnet, name: 'ASP.NET', color: 'text-purple-600' },
     { icon: SiDotnet, name: 'ASP.NET Core', color: 'text-purple-500' },
     { icon: SiCakephp, name: 'CakePHP', color: 'text-red-500' },
