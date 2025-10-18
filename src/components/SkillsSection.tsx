@@ -19,7 +19,9 @@ import {
   FaFigma,
   FaRust,
   FaCode,
-  FaHardHat
+  FaHardHat,
+  FaMeteor,
+  FaEthereum
 } from 'react-icons/fa';
 import { 
   SiTypescript, 
@@ -50,7 +52,6 @@ import {
   SiThreedotjs, 
   SiRedux, 
   SiWebpack, 
-  SiXamarin, 
   SiJsonwebtokens, 
   SiC, 
   SiCplusplus, 
@@ -169,7 +170,29 @@ import {
   SiWebassembly,
   SiVmware,
   SiNginx,
-  SiApachemaven
+  SiHuggingface,
+  SiTerraform,
+  SiAnsible,
+  SiFastify,
+  SiPrisma,
+  SiNeovim,
+  SiCypress,
+  SiJest,
+  SiMocha,
+  SiChai,
+  SiSelenium,
+  SiJupyter,
+  SiYaml,
+  SiMercurial,
+  SiGitea,
+  SiPhoenixframework,
+  SiSailsdotjs,
+  SiMeteor,
+  SiVim,
+  SiGnuemacs,
+  SiCaddy,
+  SiAlibabacloud,
+  SiHtmx
 } from 'react-icons/si';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -206,6 +229,14 @@ const SkillsSection = () => {
   { icon: FaCode, name: 'Vyper', color: 'text-blue-500' },
   { icon: SiWebassembly, name: 'WebAssembly', color: 'text-purple-600' },
   { icon: SiZig, name: 'Zig', color: 'text-orange-600' },
+  { icon: SiVim, name: 'Vim', color: 'text-green-500' },
+  { icon: SiGnuemacs, name: 'GNU Emacs', color: 'text-purple-500' },
+  { icon: FaCode, name: 'NLTK', color: 'text-blue-500' },
+  { icon: FaCode, name: 'Theano', color: 'text-orange-500' },
+  { icon: FaCode, name: 'PyBrain', color: 'text-blue-500' },
+  { icon: FaCode, name: 'DL4J', color: 'text-red-500' },
+  { icon: FaCode, name: 'LightGBM', color: 'text-orange-500' },
+  { icon: FaCode, name: 'Apache MXNet', color: 'text-orange-600' },
 
   // Frontend & Markup
     { icon: FaHtml5, name: 'HTML5', color: 'text-orange-500' },
@@ -213,6 +244,7 @@ const SkillsSection = () => {
     { icon: SiBootstrap, name: 'Bootstrap', color: 'text-purple-600' },
     { icon: SiTailwindcss, name: 'Tailwind CSS', color: 'text-cyan-400' },
     { icon: SiShadcnui, name: 'shadcn/ui', color: 'text-gray-400' },
+    { icon: SiYaml, name: 'YAML', color: 'text-gray-500' },
 
   // Package Managers
     { icon: SiNpm, name: 'npm', color: 'text-red-500' },
@@ -221,7 +253,7 @@ const SkillsSection = () => {
     { icon: SiBun, name: 'Bun', color: 'text-gray-300' },
     { icon: SiComposer, name: 'Composer', color: 'text-orange-600' },
     { icon: SiDeno, name: 'Deno', color: 'text-gray-400' },
-    { icon: SiApachemaven, name: 'Apache Maven', color: 'text-orange-600' },
+    { icon: FaCode, name: 'Apache Maven', color: 'text-orange-600' },
 
   // Frontend Frameworks & Libraries
     { icon: FaAngular, name: 'Angular', color: 'text-red-600' },
@@ -231,6 +263,7 @@ const SkillsSection = () => {
     { icon: SiBackbonedotjs, name: 'Backbone.js', color: 'text-blue-500' },
     { icon: SiEmberdotjs, name: 'Ember.js', color: 'text-orange-600' },
     { icon: SiGatsby, name: 'Gatsby', color: 'text-purple-600' },
+    { icon: SiHtmx, name: 'HTMX', color: 'text-blue-600' },
     { icon: SiJquery, name: 'jQuery', color: 'text-blue-600' },
     { icon: SiJquery, name: 'jQuery Mobile', color: 'text-blue-500' },
     { icon: FaCode, name: 'Knockout.js', color: 'text-red-500' },
@@ -251,6 +284,9 @@ const SkillsSection = () => {
     { icon: FaCode, name: 'RippleJS', color: 'text-blue-400' },
     { icon: SiVite, name: 'Vite', color: 'text-purple-500' },
     { icon: SiWebpack, name: 'Webpack', color: 'text-blue-500' },
+    { icon: SiMeteor, name: 'Meteor.js', color: 'text-orange-600' },
+    { icon: SiPhoenixframework, name: 'Phoenix', color: 'text-red-500' },
+    { icon: SiSailsdotjs, name: 'Sails.js', color: 'text-blue-500' },
 
   // Backend Frameworks
     { icon: SiDotnet, name: '.NET', color: 'text-purple-600' },
@@ -274,6 +310,7 @@ const SkillsSection = () => {
     { icon: SiSpring, name: 'Spring', color: 'text-green-500' },
     { icon: SiSpringboot, name: 'Spring Boot', color: 'text-green-400' },
     { icon: SiSymfony, name: 'Symfony', color: 'text-gray-400' },
+    { icon: SiFastify, name: 'Fastify', color: 'text-green-500' },
 
   // Mobile Development
     { icon: SiDotnet, name: '.NET MAUI', color: 'text-purple-400' },
@@ -340,6 +377,7 @@ const SkillsSection = () => {
     { icon: SiAmazonrds, name: 'Amazon RDS', color: 'text-blue-600' },
     { icon: SiAmazonredshift, name: 'Amazon Redshift', color: 'text-red-600' },
     { icon: FaCode, name: 'TimescaleDB', color: 'text-orange-500' },
+    { icon: FaCode, name: 'Neon', color: 'text-cyan-500' },
 
   // Caching & In-Memory
     { icon: SiAmazonelasticache, name: 'Amazon ElastiCache', color: 'text-red-500' },
@@ -368,6 +406,7 @@ const SkillsSection = () => {
     { icon: FaAws, name: 'Amazon Web Services', color: 'text-orange-400' },
     { icon: SiGooglecloud, name: 'Google Cloud', color: 'text-blue-400' },
     { icon: FaMicrosoft, name: 'Microsoft Azure', color: 'text-blue-500' },
+    { icon: SiAlibabacloud, name: 'Alibaba Cloud', color: 'text-orange-500' },
 
   // AWS Services
     { icon: FaCode, name: 'Amazon CloudFront', color: 'text-orange-400' },
@@ -376,31 +415,39 @@ const SkillsSection = () => {
     { icon: SiAwslambda, name: 'Amazon Lambda', color: 'text-orange-500' },
     { icon: SiAmazons3, name: 'Amazon S3', color: 'text-orange-500' },
     { icon: FaCode, name: 'Amazon SageMaker', color: 'text-green-500' },
+    { icon: FaCode, name: 'AWS CodeCommit', color: 'text-orange-500' },
 
   // Containers & Orchestration
     { icon: FaDocker, name: 'Docker', color: 'text-blue-400' },
     { icon: SiKubernetes, name: 'Kubernetes', color: 'text-blue-500' },
     { icon: SiLinuxcontainers, name: 'Linux Containers', color: 'text-yellow-500' },
+    { icon: SiTerraform, name: 'Terraform', color: 'text-purple-500' },
 
   // Version Control
     { icon: SiBitbucket, name: 'Bitbucket', color: 'text-blue-600' },
     { icon: FaGitAlt, name: 'Git', color: 'text-orange-500' },
     { icon: SiGithub, name: 'GitHub', color: 'text-gray-400' },
     { icon: SiGitlab, name: 'GitLab', color: 'text-orange-500' },
+    { icon: FaCode, name: 'Perforce Helix Core', color: 'text-blue-500' },
+    { icon: SiMercurial, name: 'Mercurial', color: 'text-orange-500' },
+    { icon: SiGitea, name: 'Gitea', color: 'text-orange-600' },
 
   // CI/CD
     { icon: SiCircleci, name: 'CircleCI', color: 'text-green-500' },
     { icon: SiGitlab, name: 'GitLab CI/CD', color: 'text-orange-500' },
     { icon: SiJenkins, name: 'Jenkins', color: 'text-blue-500' },
     { icon: SiTravisci, name: 'Travis CI', color: 'text-yellow-500' },
+    { icon: FaCode, name: 'TeamCity', color: 'text-orange-600' },
 
   // Infrastructure & Networking
     { icon: SiApachetomcat, name: 'Apache Tomcat', color: 'text-yellow-600' },
     { icon: SiCloudflare, name: 'Cloudflare', color: 'text-orange-500' },
     { icon: SiNginx, name: 'nginx', color: 'text-green-600' },
+    { icon: SiCaddy, name: 'Caddy', color: 'text-blue-400' },
 
   // Shell & Scripting
     { icon: SiGnubash, name: 'Bash', color: 'text-gray-400' },
+    { icon: SiNeovim, name: 'Neovim', color: 'text-green-500' },
 
   // Monitoring & Observability
     { icon: SiDatadog, name: 'Datadog', color: 'text-purple-600' },
@@ -421,6 +468,7 @@ const SkillsSection = () => {
     { icon: FaCode, name: 'seaborn', color: 'text-blue-400' },
     { icon: SiTensorflow, name: 'TensorFlow', color: 'text-orange-500' },
     { icon: FaCode, name: 'dplyr', color: 'text-blue-400' },
+    { icon: SiHuggingface, name: 'Hugging Face', color: 'text-yellow-500' },
 
   // Blockchain & Web3
     { icon: FaCode, name: 'Brownie', color: 'text-orange-600' },
@@ -443,6 +491,9 @@ const SkillsSection = () => {
     { icon: FaCode, name: 'Truffle Suite', color: 'text-orange-600' },
     { icon: FaCode, name: 'Venom', color: 'text-green-400' },
     { icon: SiWeb3Dotjs, name: 'Web3.js', color: 'text-orange-500' },
+    { icon: FaCode, name: 'MetaMask', color: 'text-orange-400' },
+    { icon: FaCode, name: 'Geth', color: 'text-blue-600' },
+    { icon: FaCode, name: 'Soileum', color: 'text-purple-500' },
 
   // Design & Creative Tools
     { icon: SiAdobeillustrator, name: 'Adobe Illustrator', color: 'text-orange-500' },
@@ -458,7 +509,9 @@ const SkillsSection = () => {
 
   // CMS & Other Tools
     { icon: SiN8N, name: 'n8n', color: 'text-red-500' },
-    { icon: SiWordpress, name: 'WordPress', color: 'text-blue-600' }
+    { icon: SiWordpress, name: 'WordPress', color: 'text-blue-600' },
+    { icon: SiAnsible, name: 'Ansible', color: 'text-red-600' },
+    { icon: SiPrisma, name: 'Prisma', color: 'text-teal-500' }
   ];
 
   useEffect(() => {
