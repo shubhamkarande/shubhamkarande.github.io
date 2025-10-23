@@ -17,8 +17,8 @@ const AboutSection = () => {
   const stats = [
     {
       icon: MapPin,
-      title: 'Experience',
-      value: '1 Year',
+      title: 'Location',
+      value: 'Mumbai',
       color: 'text-neon-blue'
     },
     {
@@ -180,7 +180,7 @@ const AboutSection = () => {
             <div>
               <div className="space-y-4 text-foreground/80 text-lg leading-relaxed mb-8">
                 <p>
-                  I specialize in crafting responsive, modern websites and high-performance mobile applications. With over 1 year of experience, I have collaborated with various tech startups and organizations to deliver innovative and reliable solutions tailored to their needs.
+                  I specialize in crafting responsive, modern websites and high-performance mobile applications. With hands on experience over multiple technologies, I have created and worked on diverse projects that showcase my skills and dedication to quality.
                 </p>
               </div>
 
