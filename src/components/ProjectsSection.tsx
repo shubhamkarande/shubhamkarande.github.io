@@ -14,7 +14,7 @@ const ProjectsSection = () => {
     const containerRef = useRef<HTMLDivElement>(null);
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filterButtons = ['All', 'Web', 'App', 'Other'];
+  const filterButtons = ['All', 'Web', 'App', 'AI', 'ML', 'Other'];
 
 const filteredProjects = activeFilter === 'All' 
     ? projectsData 
@@ -121,27 +121,28 @@ const filteredProjects = activeFilter === 'All'
             Featured Projects
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            Explore my latest work showcasing innovative solutions and cutting-edge 
-            technologies that bring ideas to life.
+            Projects that highlight my skills in full-stack Web and Mobile development, cloud deployments, and practical AI/ML integrations.
           </p>
         </div>
 
         {/* Filter Buttons */}
         <div className="flex justify-center mb-12">
-          <div className="flex bg-background-secondary/50 backdrop-blur-sm rounded-full p-1 border border-glass-border">
-            {filterButtons.map((filter) => (
-              <button
-                key={filter}
-                onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeFilter === filter
-                    ? 'bg-gradient-neon text-background shadow-glow-neon'
-                    : 'text-foreground/70 hover:text-foreground hover:bg-background-secondary/30'
-                }`}
-              >
-                {filter}
-              </button>
-            ))}
+          <div className="w-fit bg-background-secondary/50 backdrop-blur-sm rounded-full p-1 border border-glass-border overflow-x-auto scrollbar-hide">
+            <div className="flex gap-2 flex-nowrap">
+              {filterButtons.map((filter) => (
+                <button
+                  key={filter}
+                  onClick={() => setActiveFilter(filter)}
+                  className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
+                    activeFilter === filter
+                      ? 'bg-gradient-neon text-background shadow-glow-neon'
+                      : 'text-foreground/70 hover:text-foreground hover:bg-background-secondary/30'
+                  }`}
+                >
+                  {filter}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 

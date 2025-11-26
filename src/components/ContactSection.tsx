@@ -246,8 +246,7 @@ const ContactSection = () => {
             Get In Touch
           </h2>
           <p className="contact-element text-xl text-foreground/70">
-            Ready to bring your ideas to life? Let's create something amazing
-            together.
+            Have a project in mind? I build scalable Web, Mobile, and AI-powered solutions that ship to production. Let’s talk.
           </p>
         </div>
 
@@ -256,7 +255,7 @@ const ContactSection = () => {
           <div className="flex flex-col">
             <div className="contact-element text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                Talk to me
+                Contact Options
               </h3>
             </div>
 
@@ -334,7 +333,7 @@ const ContactSection = () => {
           <div className="flex flex-col">
             <div className="contact-element text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                Write me your project
+                Send a Message
               </h3>
             </div>
 
@@ -368,11 +367,11 @@ const ContactSection = () => {
 
                 <div className="contact-element">
                   <label className="block text-sm font-medium text-foreground/80 mb-2">
-                    Project
+                    Message
                   </label>
                   <Textarea
                     name="message"
-                    placeholder="Write your project"
+                    placeholder="Write your message"
                     rows={6}
                     className="glass-card border-glass-border bg-background-secondary/50 focus:border-neon-blue focus:ring-neon-blue/20"
                     required

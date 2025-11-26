@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MapPin, Briefcase, Headphones, Download, FilePdf } from 'phosphor-react';
+import { MapPin, Briefcase, Calendar, Download, FilePdf } from 'phosphor-react';
 import resumePDF from '@/assets/Shubham-Karande-Resume.pdf';
 import profileImage from '@/assets/Shubham.jpg';
 import { Button } from '@/components/ui/button';
@@ -28,9 +28,9 @@ const AboutSection = () => {
       color: 'text-neon-purple'
     },
     {
-      icon: Headphones,
-      title: 'Support',
-      value: 'Online 24/7',
+      icon: Calendar,
+      title: 'Experience',
+      value: '5 Months',
       color: 'text-neon-green'
     }
   ];
@@ -122,7 +122,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Get to know more about my journey, experience, and passion for creating innovative digital solutions.
+            Discover my work, my skills, and how I engineer meaningful digital products.
           </p>
         </div>
 
@@ -180,7 +180,7 @@ const AboutSection = () => {
             <div>
               <div className="space-y-4 text-foreground/80 text-lg leading-relaxed mb-8">
                 <p>
-                  I specialize in crafting responsive, modern websites and high-performance mobile applications. With hands on experience over multiple technologies, I have created and worked on diverse projects that showcase my skills and dedication to quality.
+                  I build fast, scalable web and mobile applications with clean design and solid engineering. Skilled across modern frontend and backend technologies, I create reliable digital experiences that perform well in real-world environments. Currently expanding into DevOps and AI/ML to deliver smarter and more powerful solutions.
                 </p>
               </div>
 

@@ -21,14 +21,16 @@ const QualificationSection = () => {
     {
       degree: "B.E. in Computer Engineering",
       institution: "University of Mumbai",
-      period: "2022 - 2025",
+      period: "November 2022 - May 2025",
       status: "Completed",
+      grade: "7.25 CGPA",
     },
     {
       degree: "Diploma in Computer Engineering",
       institution: "MSBTE",
-      period: "2019 - 2022",
+      period: "June 2019 - June 2022",
       status: "Completed",
+      grade: "84.57%",
     },
   ];
 
@@ -36,10 +38,10 @@ const QualificationSection = () => {
     {
       position: "Software Engineer",
       company: "Vserv Digital Services Pvt. Ltd.",
-      period: "August 2025 - Present",
+      period: "August 2025 - December 2025",
       type: "Full-time",
       workMode: "On-site",
-      status: "Current",
+      status: "Completed",
     },
     {
       position: "Software Engineer",
@@ -99,8 +101,7 @@ const QualificationSection = () => {
             Qualification & Experience
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            My educational background and professional journey in software
-            development and engineering.
+            My growth in software development—from engineering fundamentals to full-stack and intelligent systems.
           </p>
         </div>
 
@@ -134,28 +135,35 @@ const QualificationSection = () => {
                 <CarouselContent className="-ml-2 md:-ml-4">
                   {education.map((edu, index) => (
                     <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
-                      <div className="qualification-card glass-card p-4 sm:p-6 rounded-2xl hover:glow-blue transition-all duration-300 group h-[200px] flex flex-col justify-between">
+                      <div className="qualification-card glass-card p-4 sm:p-6 rounded-2xl hover:glow-blue transition-all duration-300 group min-h-[240px] flex flex-col justify-between">
                   <div className="flex items-start justify-between mb-4">
-                    <div className="flex-1">
-                      <h4 className="text-lg font-semibold text-foreground group-hover:text-neon-blue transition-colors duration-300">
+                    <div className="flex-1 pr-2">
+                      <h4 className="text-lg font-semibold text-foreground group-hover:text-neon-blue transition-colors duration-300 line-clamp-2">
                         {edu.degree}
                       </h4>
-                      <p className="text-foreground/70 mb-2">
+                      <p className="text-foreground/70 mb-2 text-sm line-clamp-1">
                         {edu.institution}
                       </p>
                     </div>
-                    <span
-                      className={`px-3 py-1 rounded-full text-xs font-medium text-center border ${
-                        edu.status === "Current"
-                          ? "bg-neon-green/20 text-neon-green border-neon-green/30 shadow-sm shadow-neon-green/20"
-                          : "bg-neon-blue/20 text-neon-blue border-neon-blue/30"
-                      }`}
-                    >
-                      {edu.status}
-                    </span>
+                    <div className="flex flex-col gap-1 flex-shrink-0">
+                      <span
+                        className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium text-center border whitespace-nowrap ${
+                          edu.status === "Current"
+                            ? "bg-neon-green/20 text-neon-green border-neon-green/30 shadow-sm shadow-neon-green/20"
+                            : "bg-neon-blue/20 text-neon-blue border-neon-blue/30"
+                        }`}
+                      >
+                        {edu.status}
+                      </span>
+                      {edu.grade && (
+                        <span className="px-2 sm:px-3 py-1 rounded-full text-xs font-medium text-center border bg-purple-500/20 text-purple-400 border-purple-500/30 whitespace-nowrap">
+                          {edu.grade}
+                        </span>
+                      )}
+                    </div>
                   </div>
 
-                  <div className="flex items-center gap-2 text-foreground/60">
+                  <div className="flex items-center gap-2 text-foreground/60 mt-auto">
                     <Calendar size={16} />
                     <span className="text-sm">{edu.period}</span>
                   </div>
