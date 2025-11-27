@@ -189,7 +189,7 @@ const HeroSection = () => {
           ref={subtitleRef}
           className="text-lg md:text-xl lg:text-2xl text-white/80 mb-8 leading-relaxed max-w-2xl mx-auto"
         >
-          Full-stack Web & Mobile Engineer — expanding into DevOps and AI/ML to build smarter digital products.
+          Full-stack Web & Mobile Engineer — expanding into AI and ML to build smarter digital products.
         </p>
 
         <div className="flex justify-center">

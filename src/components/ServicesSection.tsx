@@ -4,22 +4,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
   Code, 
   PaintBrush, 
-  Rocket, 
-  Globe, 
   DeviceMobile, 
   Lightning,
-  Desktop,
   CloudArrowUp,
-  Brain,
-  ChartLineUp,
-  Database,
-  ChartBar,
-  CurrencyBtc,
-  Cube,
-  Gear,
-  Robot,
-  Cpu,
-  Shield
+  Brain
 } from 'phosphor-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,6 +16,12 @@ const ServicesSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const services = [
+    {
+      icon: PaintBrush,
+      title: 'UI/UX Design',
+      description: 'Beautiful, intuitive interfaces designed with user-centric principles. Creating engaging digital experiences that combine aesthetics with functionality and accessibility.',
+      color: 'text-neon-purple'
+    },
     {
       icon: Code,
       title: 'Full Stack Web Development',
@@ -47,12 +41,6 @@ const ServicesSection = () => {
       color: 'text-cyan-400'
     },
     {
-      icon: Rocket,
-      title: 'DevOps',
-      description: 'CI/CD pipelines, Docker-based environments, and workflow automation to ensure smooth, reliable development and deployment processes.',
-      color: 'text-orange-400'
-    },
-    {
       icon: Brain,
       title: 'Artificial Intelligence',
       description: 'Exploring foundational AI concepts with hands-on experience in deep learning, NLP, and model integration into real applications.',
@@ -61,7 +49,7 @@ const ServicesSection = () => {
     {
       icon: Lightning,
       title: 'Machine Learning',
-      description: 'Building projects with Python, Scikit-learn, Pandas, and TensorFlow to solve data-driven challenges and enhance product intelligence.',
+      description: 'Building projects with Python, scikit-learn, pandas, and TensorFlow to solve data-driven challenges and enhance product intelligence.',
       color: 'text-yellow-400'
     }
   ];
@@ -105,7 +93,7 @@ const ServicesSection = () => {
             Services
           </h2>
           <p className="text-foreground/70 text-lg max-w-3xl mx-auto">
-            I deliver end-to-end development across Web, Mobile, DevOps and emerging AI/ML — turning concepts into real, scalable products.
+            I deliver end-to-end development across Web, Mobile and emerging AI/ML — turning concepts into real, scalable products.
           </p>
         </div>
 
@@ -113,11 +101,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="service-card glass-card p-8 rounded-2xl hover:glow-blue transition-all duration-300 group"
-              style={{
-                opacity: 0,
-                transform: 'translateY(30px) scale(0.9)'
-              }}
+              className="service-card glass-card p-8 rounded-2xl hover:glow-blue transition-all duration-300 group opacity-0"
             >
               <div className="mb-6">
                 <service.icon 

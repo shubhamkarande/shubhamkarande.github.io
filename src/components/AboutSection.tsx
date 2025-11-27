@@ -180,7 +180,7 @@ const AboutSection = () => {
             <div>
               <div className="space-y-4 text-foreground/80 text-lg leading-relaxed mb-8">
                 <p>
-                  I build fast, scalable web and mobile applications with clean design and solid engineering. Skilled across modern frontend and backend technologies, I create reliable digital experiences that perform well in real-world environments. Currently expanding into DevOps and AI/ML to deliver smarter and more powerful solutions.
+                  I build fast, scalable web and mobile applications with clean design and solid engineering. Skilled across modern frontend and backend technologies, I create reliable digital experiences that perform well in real-world environments. Currently expanding into AI and ML to deliver smarter and more powerful solutions.
                 </p>
               </div>
 

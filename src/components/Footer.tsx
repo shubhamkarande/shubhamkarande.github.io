@@ -107,7 +107,7 @@ const Footer = () => {
               SHUBHAM
             </h3>
             <p className="text-foreground/70 leading-relaxed">
-              Full-stack Web & Mobile Engineer — expanding into DevOps and AI/ML to build smarter digital products.
+              Full-stack Web & Mobile Engineer — expanding into AI and ML to build smarter digital products.
             </p>
           </div>
 
