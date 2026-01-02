@@ -11,13 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
-    const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filterButtons = ['All', 'Web', 'App', 'AI', 'ML', 'Other'];
+  const filterButtons = ['All', 'Web', 'App', 'Desktop', 'AI', 'ML', 'Other'];
 
-const filteredProjects = activeFilter === 'All' 
-    ? projectsData 
+  const filteredProjects = activeFilter === 'All'
+    ? projectsData
     : projectsData.filter(project => project.category === activeFilter);
 
   useEffect(() => {
@@ -74,7 +74,7 @@ const filteredProjects = activeFilter === 'All'
             duration: 0.3,
             ease: "power2.out"
           });
-          
+
           const image = card.querySelector('.project-image');
           gsap.to(image, {
             scale: 1.1,
@@ -91,7 +91,7 @@ const filteredProjects = activeFilter === 'All'
             duration: 0.3,
             ease: "power2.out"
           });
-          
+
           const image = card.querySelector('.project-image');
           gsap.to(image, {
             scale: 1,
@@ -107,14 +107,14 @@ const filteredProjects = activeFilter === 'All'
   }, []);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="py-20 px-6 lg:px-20"
       data-scroll-section
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 
+          <h2
             ref={titleRef}
             className="text-section gradient-text mb-6"
           >
@@ -133,11 +133,10 @@ const filteredProjects = activeFilter === 'All'
                 <button
                   key={filter}
                   onClick={() => setActiveFilter(filter)}
-                  className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
-                    activeFilter === filter
+                  className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${activeFilter === filter
                       ? 'bg-gradient-neon text-background shadow-glow-neon'
                       : 'text-foreground/70 hover:text-foreground hover:bg-background-secondary/30'
-                  }`}
+                    }`}
                 >
                   {filter}
                 </button>
@@ -146,7 +145,7 @@ const filteredProjects = activeFilter === 'All'
           </div>
         </div>
 
-        <div 
+        <div
           ref={containerRef}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
@@ -168,13 +167,13 @@ const filteredProjects = activeFilter === 'All'
                 <h3 className="text-xl font-semibold text-foreground group-hover:text-neon-blue transition-colors duration-300 mb-3">
                   {project.title}
                 </h3>
-                
+
                 <div className="flex-grow mb-4 overflow-y-auto max-h-32 custom-scrollbar">
                   <p className="text-foreground/70 leading-relaxed">
                     {project.description}
                   </p>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
@@ -186,9 +185,9 @@ const filteredProjects = activeFilter === 'All'
                   ))}
                 </div>
 
-                <a 
-                  href={project.demoLink} 
-                  target="_blank" 
+                <a
+                  href={project.demoLink}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="block mt-auto"
                 >

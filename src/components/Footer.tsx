@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { 
-  GithubLogo, 
-  LinkedinLogo, 
+import {
+  GithubLogo,
+  LinkedinLogo,
   Heart,
   InstagramLogo,
   SnapchatLogo
@@ -75,13 +75,13 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer 
+    <footer
       ref={footerRef}
       className="relative py-16 px-6 lg:px-20 mt-20 border-t border-glass-border"
       data-scroll-section
     >
 
-      <div 
+      <div
         ref={particlesRef}
         className="absolute inset-0 overflow-hidden pointer-events-none"
       >
@@ -116,123 +116,123 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-neon-blue mb-6">
               Social Links
             </h4>
-            
+
 
             <div className="grid grid-cols-4 gap-3">
-              <a 
-                href="https://linkedin.com/in/karandeshubham" 
+              <a
+                href="https://linkedin.com/in/karandeshubham"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <LinkedinLogo 
-                  size={16} 
-                  className="text-foreground group-hover:text-blue-400 transition-colors duration-300" 
+                <LinkedinLogo
+                  size={16}
+                  className="text-foreground group-hover:text-blue-400 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-blue-400 transition-colors duration-300">
                   LinkedIn
                 </span>
               </a>
-              
-              <a 
-                href="https://github.com/shubhamkarande" 
+
+              <a
+                href="https://github.com/shubhamkarande"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <GithubLogo 
-                  size={16} 
-                  className="text-foreground group-hover:text-purple-400 transition-colors duration-300" 
+                <GithubLogo
+                  size={16}
+                  className="text-foreground group-hover:text-purple-400 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-purple-400 transition-colors duration-300">
                   GitHub
                 </span>
               </a>
-              
-              <a 
-                href="https://leetcode.com/u/stfushubham/" 
+
+              <a
+                href="https://leetcode.com/u/stfushubham/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <SiLeetcode 
-                  size={16} 
-                  className="text-foreground group-hover:text-yellow-400 transition-colors duration-300" 
+                <SiLeetcode
+                  size={16}
+                  className="text-foreground group-hover:text-yellow-400 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-yellow-400 transition-colors duration-300">
                   LeetCode
                 </span>
               </a>
-              
-              <a 
-                href="https://www.instagram.com/_stfu.shubham_/" 
+
+              <a
+                href="https://www.instagram.com/_stfu.shubham_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <InstagramLogo 
-                  size={16} 
-                  className="text-foreground group-hover:text-pink-400 transition-colors duration-300" 
+                <InstagramLogo
+                  size={16}
+                  className="text-foreground group-hover:text-pink-400 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-pink-400 transition-colors duration-300">
                   Instagram
                 </span>
               </a>
-              
-              <a 
-                href="https://x.com/stfu_shubham09" 
+
+              <a
+                href="https://x.com/stfu_shubham09"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <SiX 
-                  size={16} 
-                  className="text-foreground group-hover:text-cyan-400 transition-colors duration-300" 
+                <SiX
+                  size={16}
+                  className="text-foreground group-hover:text-cyan-400 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-cyan-400 transition-colors duration-300">
                   X (Twitter)
                 </span>
               </a>
-              
-              <a 
-                href="https://www.snapchat.com/@stfu.shubham09" 
+
+              <a
+                href="https://www.snapchat.com/@stfu.shubham09"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <SnapchatLogo 
-                  size={16} 
-                  className="text-foreground group-hover:text-yellow-300 transition-colors duration-300" 
+                <SnapchatLogo
+                  size={16}
+                  className="text-foreground group-hover:text-yellow-300 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-yellow-300 transition-colors duration-300">
                   Snapchat
                 </span>
               </a>
-              
-              <a 
-                href="https://dribbble.com/shubhamkarande" 
+
+              <a
+                href="https://dribbble.com/shubhamkarande"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <SiDribbble 
-                  size={16} 
-                  className="text-foreground group-hover:text-pink-400 transition-colors duration-300" 
+                <SiDribbble
+                  size={16}
+                  className="text-foreground group-hover:text-pink-400 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-pink-400 transition-colors duration-300">
                   Dribbble
                 </span>
               </a>
-              
-              <a 
-                href="https://medium.com/@shubhamkarande94" 
+
+              <a
+                href="https://medium.com/@shubhamkarande94"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card py-1.5 rounded-lg hover:glow-blue transition-all duration-300 group flex flex-col items-center gap-0"
               >
-                <SiMedium 
-                  size={16} 
-                  className="text-foreground group-hover:text-green-400 transition-colors duration-300" 
+                <SiMedium
+                  size={16}
+                  className="text-foreground group-hover:text-green-400 transition-colors duration-300"
                 />
                 <span className="text-[8px] text-foreground/70 group-hover:text-green-400 transition-colors duration-300">
                   Medium
@@ -246,7 +246,7 @@ const Footer = () => {
         <div className="footer-element pt-8 border-t border-glass-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-foreground/60 text-sm">
-              © 2025 Shubham Karande. All rights reserved.
+              © 2026 Shubham Karande. All rights reserved.
             </p>
             <p className="text-foreground/60 text-sm flex items-center gap-1">
               Made with <Heart size={16} className="text-neon-pink" /> using React & GSAP
